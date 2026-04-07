@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="The Great Lock In">
+<meta name="application-name" content="The Great Lock In">
+<meta name="theme-color" content="#080808">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBmMDAwMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxYTAwMDAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIEJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI4MCIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSBSZWQgYWNjZW50IGJhciB0b3AgLS0+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2U4MDAxYyIvPgoKICA8IS0tIEZvb3RiYWxsIGZpZWxkIGhhc2ggbWFya3MgZGVjb3JhdGl2ZSAtLT4KICA8bGluZSB4MT0iNDAiIHkxPSI2MCIgeDI9IjgwIiB5Mj0iNjAiIHN0cm9rZT0iI2U4MDAxYyIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjMiLz4KICA8bGluZSB4MT0iNDMyIiB5MT0iNjAiIHgyPSI0NzIiIHkyPSI2MCIgc3Ryb2tlPSIjZTgwMDFjIiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9IjAuMyIvPgoKICA8IS0tIFRIRSAtLT4KICA8dGV4dCB4PSIyNTYiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIEJsYWNrLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmaWxsPSIjZjBlZGU4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iOCI+VEhFPC90ZXh0PgoKICA8IS0tIEdSRUFUIHJlZCBkaXZpZGVyIGxpbmUgLS0+CiAgPHJlY3QgeD0iNjAiIHk9IjE5NSIgd2lkdGg9IjM5MiIgaGVpZ2h0PSIzIiBmaWxsPSIjZTgwMDFjIi8+CgogIDwhLS0gR1JFQVQgLS0+CiAgPHRleHQgeD0iMjU2IiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjaywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4MCIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iI2U4MDAxYyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjQiPkdSRUFUPC90ZXh0PgoKICA8IS0tIExPQ0sgSU4gLS0+CiAgPHRleHQgeD0iMjU2IiB5PSIzNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjaywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4MCIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iI2Y1YTgwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjQiPkxPQ0sgSU48L3RleHQ+CgogIDwhLS0gQm90dG9tIGRpdmlkZXIgLS0+CiAgPHJlY3QgeD0iNjAiIHk9IjM3MCIgd2lkdGg9IjM5MiIgaGVpZ2h0PSIzIiBmaWxsPSIjZTgwMDFjIi8+CgogIDwhLS0gQ0IgcG9zaXRpb24gdGFnIC0tPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM0NDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIxMiI+Q09STkVSQkFDSzwvdGV4dD4KCiAgPCEtLSBSZWQgYWNjZW50IGJhciBib3R0b20gLS0+CiAgPHJlY3QgeD0iMCIgeT0iNTA0IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjZTgwMDFjIi8+Cjwvc3ZnPgo=">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBmMDAwMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxYTAwMDAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIEJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI4MCIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSBSZWQgYWNjZW50IGJhciB0b3AgLS0+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2U4MDAxYyIvPgoKICA8IS0tIEZvb3RiYWxsIGZpZWxkIGhhc2ggbWFya3MgZGVjb3JhdGl2ZSAtLT4KICA8bGluZSB4MT0iNDAiIHkxPSI2MCIgeDI9IjgwIiB5Mj0iNjAiIHN0cm9rZT0iI2U4MDAxYyIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjMiLz4KICA8bGluZSB4MT0iNDMyIiB5MT0iNjAiIHgyPSI0NzIiIHkyPSI2MCIgc3Ryb2tlPSIjZTgwMDFjIiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9IjAuMyIvPgoKICA8IS0tIFRIRSAtLT4KICA8dGV4dCB4PSIyNTYiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIEJsYWNrLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmaWxsPSIjZjBlZGU4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iOCI+VEhFPC90ZXh0PgoKICA8IS0tIEdSRUFUIHJlZCBkaXZpZGVyIGxpbmUgLS0+CiAgPHJlY3QgeD0iNjAiIHk9IjE5NSIgd2lkdGg9IjM5MiIgaGVpZ2h0PSIzIiBmaWxsPSIjZTgwMDFjIi8+CgogIDwhLS0gR1JFQVQgLS0+CiAgPHRleHQgeD0iMjU2IiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjaywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4MCIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iI2U4MDAxYyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjQiPkdSRUFUPC90ZXh0PgoKICA8IS0tIExPQ0sgSU4gLS0+CiAgPHRleHQgeD0iMjU2IiB5PSIzNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjaywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4MCIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iI2Y1YTgwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjQiPkxPQ0sgSU48L3RleHQ+CgogIDwhLS0gQm90dG9tIGRpdmlkZXIgLS0+CiAgPHJlY3QgeD0iNjAiIHk9IjM3MCIgd2lkdGg9IjM5MiIgaGVpZ2h0PSIzIiBmaWxsPSIjZTgwMDFjIi8+CgogIDwhLS0gQ0IgcG9zaXRpb24gdGFnIC0tPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM0NDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIxMiI+Q09STkVSQkFDSzwvdGV4dD4KCiAgPCEtLSBSZWQgYWNjZW50IGJhciBib3R0b20gLS0+CiAgPHJlY3QgeD0iMCIgeT0iNTA0IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjZTgwMDFjIi8+Cjwvc3ZnPgo=">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Great Lock In</title>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#080808;--red:#e8001c;--red-dark:#6a0010;--gold:#f5a800;--white:#f0ede8;--gray:#111;--gray2:#181818;--border:#222;--green:#00c853;--blue:#0088ff;--purple:#9b59b6;--orange:#ff6b00;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;}
+header{padding:28px 18px 18px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0f0000,var(--black));position:relative;overflow:hidden;}
+header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(232,0,28,.07),transparent 60%);pointer-events:none;}
+.eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:5px;}
+h1{font-family:'Black Han Sans',sans-serif;font-size:clamp(32px,8vw,64px);line-height:.9;text-transform:uppercase;}
+h1 em{color:var(--red);font-style:normal;display:block;}
+.sub{margin-top:9px;font-family:'Barlow Condensed',sans-serif;font-size:11px;color:#555;letter-spacing:2px;text-transform:uppercase;}
+.stats{display:flex;border-bottom:1px solid var(--border);overflow-x:auto;}
+.stat{flex:1;min-width:72px;padding:11px 7px;border-right:1px solid var(--border);text-align:center;}
+.stat:last-child{border-right:none;}
+.stat-n{font-family:'Black Han Sans',sans-serif;font-size:18px;color:var(--gold);line-height:1;}
+.stat-l{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:#444;margin-top:3px;}
+.legend{display:flex;gap:12px;padding:9px 14px;border-bottom:1px solid var(--border);overflow-x:auto;flex-wrap:wrap;}
+.legend-item{display:flex;align-items:center;gap:5px;font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#555;white-space:nowrap;}
+.dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+/* MONTH TABS */
+.month-tabs{display:flex;border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;}
+.mtab{flex-shrink:0;padding:12px 14px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:none;border:none;color:#333;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;white-space:nowrap;}
+.mtab.active{color:var(--white);border-bottom-color:var(--red);}
+.mtab:hover{color:#666;}
+/* CALENDAR */
+.mcontent{display:none;}
+.mcontent.active{display:block;}
+.cal-wrap{padding:12px 8px;}
+.mlabel{font-family:'Black Han Sans',sans-serif;font-size:19px;text-transform:uppercase;margin-bottom:2px;letter-spacing:1px;}
+.msub{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#3a3a3a;margin-bottom:12px;}
+.dow-row{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:2px;}
+.dow{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:#252525;text-align:center;padding:4px 0;}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;}
+.cd{background:var(--gray2);border:1px solid var(--border);border-radius:2px;min-height:90px;padding:6px 5px;cursor:pointer;transition:all .15s;position:relative;overflow:hidden;}
+.cd:hover{border-color:#444;background:#1d1d1d;z-index:2;}
+.cd.empty{background:transparent;border-color:transparent;cursor:default;pointer-events:none;min-height:90px;}
+.cd.rest{background:#0c0c0c;cursor:default;}
+.cd.rest:hover{background:#0e0e0e;}
+.cd.game{background:#160b00;border-color:#3a1a00;}
+.cd.game:hover{background:#1e1000;}
+.cd.sel{border-color:var(--red)!important;background:#180004!important;}
+.cd-date{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;color:#3a3a3a;margin-bottom:2px;letter-spacing:.5px;}
+.cd-dow{font-family:'Barlow Condensed',sans-serif;font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:2px;display:block;}
+.cd-title{font-family:'Black Han Sans',sans-serif;font-size:9px;text-transform:uppercase;line-height:1.2;margin-bottom:3px;}
+.cd-preview{font-family:'Barlow Condensed',sans-serif;font-size:8px;color:#383838;line-height:1.4;}
+.cd-stripe{position:absolute;top:0;left:0;width:3px;height:100%;}
+/* PANEL */
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:200;display:none;align-items:flex-end;justify-content:center;}
+.backdrop.open{display:flex;}
+.panel{background:var(--gray);border:1px solid var(--border);border-bottom:none;width:100%;max-width:640px;max-height:92vh;overflow-y:auto;border-radius:4px 4px 0 0;padding:20px 16px 60px;animation:up .2s ease;}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.ptop{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;}
+.pdate{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:2px;}
+.ptitle{font-family:'Black Han Sans',sans-serif;font-size:22px;text-transform:uppercase;line-height:1;}
+.pmeta{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-top:3px;}
+.xbtn{background:var(--gray2);border:1px solid var(--border);color:#555;width:30px;height:30px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:8px;}
+.xbtn:hover{color:var(--white);}
+.pnote{margin:12px 0 2px;padding:10px 12px;background:rgba(232,0,28,.06);border:1px solid var(--red-dark);font-size:13px;color:#888;line-height:1.6;}
+.pnote.gnote{background:rgba(255,107,0,.07);border-color:#7a3800;}
+.psec{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:12px 0 6px;display:flex;align-items:center;gap:8px;color:#2e2e2e;}
+.psec::after{content:'';flex:1;height:1px;background:var(--border);}
+.psec .ct{font-size:8px;color:var(--gold);}
+.psec.abs .ct{color:var(--green);}
+.psec.meal{color:#2a2020;}
+.psec.meal .ct{color:#c0784a;}
+.meal-row{display:flex;justify-content:space-between;align-items:flex-start;background:#120d0a;padding:9px 13px;gap:10px;margin-bottom:1px;}
+.meal-row:hover{background:#1a1208;}
+.meal-time{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c0784a;white-space:nowrap;margin-bottom:2px;}
+.meal-name{font-size:13px;color:var(--white);line-height:1.3;}
+.meal-detail{font-size:11px;color:#666;margin-top:2px;line-height:1.4;}
+.meal-cal{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;color:#c0784a;white-space:nowrap;text-align:right;flex-shrink:0;}
+.llist{display:flex;flex-direction:column;gap:1px;}
+.lrow{display:flex;justify-content:space-between;align-items:flex-start;background:var(--gray2);padding:9px 12px;gap:10px;}
+.lrow.ab{background:#0a140a;}
+.lname{font-size:13px;color:var(--white);flex:1;line-height:1.3;}
+.ldetail{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;color:var(--gold);white-space:nowrap;}
+.lrow.ab .ldetail{color:var(--green);}
+.lrow.spd{background:#0a0a14;}
+.lrow.spd .lname{color:#c8d8ff;}
+.ldetail.spdd{color:#6688ff;}
+.psec.spd{color:#3a3a6a;}
+.psec.spd .ct{color:#6688ff;}
+.lnote{font-size:11px;color:#555;margin-top:2px;font-style:italic;display:block;}
+.tabs-bar{display:flex;align-items:stretch;border-bottom:1px solid var(--border);position:relative;}
+.tabs-bar .month-tabs{flex:1;border-bottom:none;}
+.rest-timer-wrap{flex-shrink:0;position:relative;border-left:1px solid var(--border);}
+.rest-btn{padding:0 14px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:none;border:none;color:#e8001c;cursor:pointer;height:100%;white-space:nowrap;}
+.rest-btn:hover{color:#ff4444;}
+.nutr-btn{color:#f5a800;}
+.nutr-btn:hover{color:#ffc844;}
+.nutr-wrap{flex-shrink:0;position:relative;border-left:1px solid var(--border);}
+.nutr-panel{position:absolute;top:100%;right:0;background:#111;border:1px solid var(--border);border-top:none;z-index:50;width:320px;max-height:80vh;overflow-y:auto;}
+.np-head{padding:14px 16px 10px;border-bottom:1px solid var(--border);}
+.np-title{font-family:'Black Han Sans',sans-serif;font-size:18px;text-transform:uppercase;color:var(--white);letter-spacing:1px;}
+.np-sub{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#555;margin-top:3px;}
+.np-macro{display:flex;gap:1px;background:var(--border);margin:0;}
+.np-macro-item{flex:1;background:#161616;padding:12px 8px;text-align:center;}
+.np-macro-num{font-family:'Black Han Sans',sans-serif;font-size:22px;line-height:1;}
+.np-macro-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#555;margin-top:3px;}
+.np-section{padding:10px 14px 4px;font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#444;display:flex;align-items:center;gap:8px;}
+.np-section::after{content:'';flex:1;height:1px;background:var(--border);}
+.np-food-row{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;background:#161616;margin-bottom:1px;}
+.np-food-row:hover{background:#1d1d1d;}
+.np-food-name{font-size:13px;color:var(--white);}
+.np-food-note{font-size:10px;color:#555;margin-top:1px;}
+.np-food-amt{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;white-space:nowrap;text-align:right;}
+.np-tip{margin:8px 14px;padding:10px 12px;background:rgba(245,168,0,.06);border:1px solid #3a2a00;font-size:12px;color:#888;line-height:1.6;}
+.np-tip strong{color:var(--gold);display:block;font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:2px;}
+.rest-panel{position:absolute;top:100%;right:0;background:#111;border:1px solid var(--border);border-top:none;z-index:50;min-width:200px;}
+.rest-panel-inner{padding:16px;}
+.rest-display{font-family:'Black Han Sans',sans-serif;font-size:48px;color:var(--white);text-align:center;line-height:1;margin-bottom:12px;letter-spacing:2px;}
+.rest-display.running{color:var(--gold);}
+.rest-display.done{color:var(--green);}
+.rest-controls{display:flex;gap:6px;margin-bottom:10px;}
+.rest-ctrl{flex:1;padding:8px;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;background:var(--gray2);border:1px solid var(--border);color:var(--white);cursor:pointer;border-radius:2px;}
+.rest-ctrl:hover{background:#222;}
+.rest-start{width:100%;padding:10px;font-family:'Black Han Sans',sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:2px;background:var(--red);border:none;color:white;cursor:pointer;border-radius:2px;margin-bottom:10px;}
+.rest-start:hover{background:#c00016;}
+.rest-presets{display:flex;gap:4px;}
+.rest-preset{flex:1;padding:6px 4px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;background:var(--gray2);border:1px solid var(--border);color:#888;cursor:pointer;border-radius:2px;}
+.rest-preset:hover{color:var(--white);border-color:#444;}
+@media(max-width:420px){.cd{min-height:72px;padding:5px 4px;}.cd-title{font-size:8px;}.cal-wrap{padding:8px 5px;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">The Great Lock In</div>
+  <h1>THE<em>GRIND</em></h1>
+  <p class="sub">Tap any day · 9 exercises + 3 abs · DB = Dumbbell · Games: Apr 28 · May 5 · May 12</p>
+</header>
+<div class="stats">
+  <div class="stat"><div class="stat-n">116</div><div class="stat-l">Days</div></div>
+  <div class="stat"><div class="stat-n">90</div><div class="stat-l">Min/Day</div></div>
+  <div class="stat"><div class="stat-n">9+3</div><div class="stat-l">Ex+Abs</div></div>
+  <div class="stat"><div class="stat-n">3</div><div class="stat-l">Games</div></div>
+  <div class="stat"><div class="stat-n">Jul 31</div><div class="stat-l">Last Day</div></div>
+</div>
+<div class="legend">
+  <div class="legend-item"><div class="dot" style="background:#e8001c"></div>Chest/Tri</div>
+  <div class="legend-item"><div class="dot" style="background:#f5a800"></div>Legs/Power</div>
+  <div class="legend-item"><div class="dot" style="background:#0088ff"></div>Back/Bi</div>
+  <div class="legend-item"><div class="dot" style="background:#9b59b6"></div>Shoulders</div>
+  <div class="legend-item"><div class="dot" style="background:#00c853"></div>Recovery/CB</div>
+  <div class="legend-item"><div class="dot" style="background:#ff6b00"></div>Game Day</div>
+  <div class="legend-item"><div class="dot" style="background:#222"></div>Rest</div>
+</div>
+<div class="tabs-bar">
+  <div class="month-tabs" id="mtabs"></div>
+  <div class="nutr-wrap" id="nutrWrap">
+    <button class="rest-btn nutr-btn" onclick="toggleNutr()">🥩 DIET</button>
+    <div class="nutr-panel" id="nutrPanel" style="display:none"></div>
+  </div>
+  <div class="rest-timer-wrap" id="restTimerWrap">
+    <button class="rest-btn" id="restBtn" onclick="toggleRestTimer()">⏱ REST</button>
+    <div class="rest-panel" id="restPanel" style="display:none">
+      <div class="rest-panel-inner">
+        <div class="rest-display" id="restDisplay">1:30</div>
+        <div class="rest-controls">
+          <button class="rest-ctrl" onclick="adjustTime(-15)">−15s</button>
+          <button class="rest-ctrl" onclick="adjustTime(15)">+15s</button>
+        </div>
+        <button class="rest-start" id="restStart" onclick="startRestTimer()">START</button>
+        <div class="rest-presets">
+          <button class="rest-preset" onclick="setTime(60)">1:00</button>
+          <button class="rest-preset" onclick="setTime(90)">1:30</button>
+          <button class="rest-preset" onclick="setTime(120)">2:00</button>
+          <button class="rest-preset" onclick="setTime(180)">3:00</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="months"></div>
+
+<div class="backdrop" id="backdrop" onclick="closeP(event)">
+  <div class="panel">
+    <div class="ptop">
+      <div><div class="pdate" id="pd"></div><div class="ptitle" id="pt"></div><div class="pmeta" id="pm"></div></div>
+      <button class="xbtn" onclick="document.getElementById('backdrop').classList.remove('open');document.body.style.overflow=''">✕</button>
+    </div>
+    <div id="pb"></div>
+  </div>
+</div>
+
+<script>
+// ── ABS POOL ──────────────────────────────────────────────────────
+// ABS_POOL and getAbs defined below near panel code
+
+// ── STRIPE / TAG COLORS ───────────────────────────────────────────
+const SC={chest:'#e8001c',legs:'#f5a800',back:'#0088ff',shoulders:'#9b59b6',recovery:'#00c853',game:'#ff6b00',rest:'#161616'};
+const TC={chest:'#e8001c',legs:'#f5a800',back:'#4aa8ff',shoulders:'#bb88dd',recovery:'#00c853',game:'#ff6b00',rest:'#282828'};
+const SH={
+  'Chest + Triceps':'CHEST','Chest + Triceps (Heavy)':'CHEST',
+  'Legs + Jumps':'LEGS','Legs — No Mercy':'LEGS','Lower Body Power':'POWER','Lower — Peak Power':'POWER',
+  'Back + Biceps':'BACK','Back + Biceps (Heavy)':'BACK','Pull + Posterior':'PULL',
+  'Shoulders + Traps':'SHOULDER','Shoulders + Core':'SHOULDER','Full Body Conditioning':'FULL BODY','Full Body — Peak':'FULL BODY',
+  'Recovery + Core':'RECOVERY','CB Athleticism':'CB WORK','CB Peak Athleticism':'CB PEAK','CB Footwork Only':'CB DRILL','CB Mobility':'CB MOB','Pre-Game Prep':'PRE-GAME','Post-Game Recovery':'RECOVERY',
+  'Light Upper Body':'LIGHT','Light Pull':'LIGHT','Light Legs':'LIGHT',
+  'REST':'REST','GAME DAY 1':'GAME 1 🏈','GAME DAY 2':'GAME 2 🏈','GAME DAY 3':'GAME 3 🏈',
+  'Final Day 🏆':'DONE 🏆',
+};
+
+// ── ALL WORKOUT DATA ──────────────────────────────────────────────
+// type: chest|legs|back|shoulders|recovery|game|rest
+// lifts: exactly 9 for workout days, any for game/rest
+// abs injected automatically for all non-rest days
+
+const ALL=[
+// ═══════════════════════════════════════════════════
+// APRIL — Month 1 (Build the Base)
+// ═══════════════════════════════════════════════════
+// Apr 7 = Monday
+{d:'Apr 7', dow:'MON',type:'chest',title:'Chest + Triceps',
+note:'Day 1. Start below your max — 55 lbs on bench is on purpose. You add 5 lbs every week without fail.',
+lifts:[
+ {n:'Flat Bench Press',d:'4×8 @ 55 lbs',note:'Slow descent, full lockout'},
+ {n:'Incline Dumbbell Press',d:'3×10 @ 20 lb DBs @ 20 lbs'},
+ {n:'Cable Chest Fly',d:'3×12 light @ 30 lbs'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Dips (assisted machine)',d:'3×10 @ -30 lbs assist'},
+ {n:'Tricep Pushdown (cable)',d:'3×12 @ 30 lbs'},
+ {n:'Overhead Tricep Extension (DB)',d:'3×12 @ 15 lbs'},
+ {n:'Close-Grip Bench Press',d:'3×10 @ 45 lbs'},
+ {n:'Push-ups to failure',d:'2×max'},
+]},
+{d:'Apr 8',dow:'TUE',type:'legs',title:'Legs + Jumps',
+note:'Sprints: 20s ALL OUT, 40s rest. Incline on treadmill builds the leg drive you need at CB.',
+lifts:[
+ {n:'Barbell Squat',d:'4×8 @ 65 lbs',note:'Hit parallel every rep'},
+ {n:'Trap Bar Deadlift',d:'3×8 @ 75 lbs'},
+ {n:'Leg Press',d:'3×12 @ 90 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Leg Extension Machine',d:'3×12 @ 50 lbs'},
+ {n:'Box Jumps',d:'4×5 — tallest box available'},
+ {n:'Broad Jumps on turf',d:'3×5'},
+ {n:'Calf Raises',d:'4×15 @ 90 lbs'},
+ {n:'Treadmill Sprints',d:'6×20s @ 10 mph / incline 5'},
+]},
+{d:'Apr 9',dow:'WED',type:'recovery',title:'Recovery + Core',
+note:'Core and CB mobility wins games. This is not a skip day.',
+lifts:[
+ {n:'Treadmill jog',d:'20 min easy'},
+ {n:'Plank',d:'3×30s'},
+ {n:'Dead Bug',d:'3×10 each side'},
+ {n:'Hollow Body Hold',d:'3×20s'},
+ {n:'Band Hip Circles',d:'3×15'},
+ {n:'Lateral shuffles on turf',d:'5×10 yds each way'},
+ {n:'Agility ladder',d:'15 min'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Back Extension',d:'3×12'},
+]},
+{d:'Apr 10',dow:'THU',type:'back',title:'Back + Biceps',
+note:'Pull to your belly button on rows. Full stretch at the bottom of every pull.',
+lifts:[
+ {n:'Barbell Row',d:'4×8 @ 45 lbs',note:'Chest up, controlled'},
+ {n:'Lat Pulldown',d:'3×10 @ 60 lbs'},
+ {n:'Seated Cable Row',d:'3×12 @ 50 lbs'},
+ {n:'Assisted Pull-ups',d:'3×5'},
+ {n:'Single-Arm Dumbbell Row',d:'3×10 each @ 25 lbs'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Dumbbell Curl',d:'3×10 @ 15 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 15 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 12.5 lbs'},
+]},
+{d:'Apr 11',dow:'FRI',type:'shoulders',title:'Shoulders + Traps',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×8 @ 35 lbs'},
+ {n:'Dumbbell Lateral Raise',d:'4×15 @ 10 lbs'},
+ {n:'Face Pulls (cable)',d:'3×15 light @ 25 lbs'},
+ {n:'Front Plate Raise',d:'3×12 @ 25 lb plate @ 25 lbs'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 10 lbs'},
+ {n:'Upright Row (barbell)',d:'3×12 @ 35 lbs'},
+ {n:'Dumbbell Shrugs',d:'3×15 @ 25 lbs'},
+ {n:'KB Swing',d:'4×10 @ 25 lbs'},
+ {n:'Battle Ropes',d:'3×30s'},
+]},
+{d:'Apr 12',dow:'SAT',type:'rest',title:'REST',note:'Eat big. Sleep 9 hrs. You grow on rest days.'},
+{d:'Apr 13',dow:'SUN',type:'rest',title:'REST',note:'Optional: 15 min stretch + 3×5 broad jumps on turf.'},
+// Week 2
+{d:'Apr 14',dow:'MON',type:'chest',title:'Chest + Triceps',
+note:'+5 lbs on every barbell lift from Week 1.',
+lifts:[
+ {n:'Flat Bench Press',d:'4×8 @ 60 lbs'},
+ {n:'Incline Dumbbell Press',d:'3×10 @ 22.5 lbs'},
+ {n:'Cable Chest Fly',d:'3×12 @ 30 lbs'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Dips (assisted)',d:'3×10 @ -30 lbs assist'},
+ {n:'Tricep Pushdown',d:'3×12 @ 30 lbs'},
+ {n:'Overhead Tricep Extension (DB)',d:'3×12 @ 17.5 lbs'},
+ {n:'Close-Grip Bench Press',d:'3×10 @ 50 lbs'},
+ {n:'Push-ups to failure',d:'2×max'},
+]},
+{d:'Apr 15',dow:'TUE',type:'legs',title:'Legs + Jumps',
+lifts:[
+ {n:'Barbell Squat',d:'4×8 @ 70 lbs'},
+ {n:'Trap Bar Deadlift',d:'3×8 @ 80 lbs'},
+ {n:'Leg Press',d:'3×12 @ 110 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Leg Extension Machine',d:'3×12 @ 50 lbs'},
+ {n:'Box Jumps',d:'4×5 — tallest box available'},
+ {n:'Broad Jumps on turf',d:'3×5'},
+ {n:'Calf Raises',d:'4×15 @ 90 lbs'},
+ {n:'Treadmill Sprints',d:'6×20s @ 10.5 mph / incline 5'},
+]},
+{d:'Apr 16',dow:'WED',type:'recovery',title:'Recovery + Core',
+lifts:[
+ {n:'Treadmill jog',d:'20 min'},
+ {n:'Plank',d:'3×35s'},
+ {n:'Dead Bug',d:'3×10 each'},
+ {n:'Hollow Body Hold',d:'3×25s'},
+ {n:'Band Hip Circles',d:'3×15'},
+ {n:'Lateral shuffles on turf',d:'5×10 yds'},
+ {n:'Agility ladder',d:'15 min'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Back Extension',d:'3×12'},
+]},
+{d:'Apr 17',dow:'THU',type:'back',title:'Back + Biceps',
+lifts:[
+ {n:'Barbell Row',d:'4×8 @ 50 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 65 lbs'},
+ {n:'Seated Cable Row',d:'3×12 @ 55 lbs'},
+ {n:'Assisted Pull-ups',d:'3×6'},
+ {n:'Single-Arm Dumbbell Row',d:'3×10 each @ 27.5 lbs'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Dumbbell Curl',d:'3×10 @ 17.5 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 17.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 15 lbs'},
+]},
+{d:'Apr 18',dow:'FRI',type:'shoulders',title:'Shoulders + Traps',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×8 @ 40 lbs'},
+ {n:'Dumbbell Lateral Raise',d:'4×15 @ 10 lbs'},
+ {n:'Face Pulls',d:'3×15 @ 25 lbs'},
+ {n:'Front Plate Raise',d:'3×12 @ 25 lbs'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 10 lbs'},
+ {n:'Upright Row',d:'3×12 @ 40 lbs'},
+ {n:'Dumbbell Shrugs',d:'3×15 @ 27.5 lbs'},
+ {n:'KB Swing',d:'4×12 @ 25 lbs'},
+ {n:'Battle Ropes',d:'3×30s'},
+]},
+{d:'Apr 19',dow:'SAT',type:'rest',title:'REST',note:'Taper week starts Monday. Rest up.'},
+{d:'Apr 20',dow:'SUN',type:'rest',title:'REST',note:'Sleep 9 hrs. Eat big.'},
+// Week 3 — TAPER (Game 1 Apr 28)
+{d:'Apr 21',dow:'MON',type:'chest',title:'Light Upper Body',
+note:'TAPER WEEK — Game 1 is Apr 28. Cut volume by 40%. Keep weights same, fewer sets. Feel FAST on game day not sore.',
+lifts:[
+ {n:'Flat Bench Press',d:'3×5 @ 60 lbs',note:'Light — stop before failure'},
+ {n:'Incline Dumbbell Press',d:'3×6 @ 20 lbs'},
+ {n:'Lat Pulldown',d:'3×8 @ 60 lbs'},
+ {n:'Seated Cable Row',d:'3×8 @ 50 lbs'},
+ {n:'Dumbbell Lateral Raise',d:'2×12 @ 10 lbs'},
+ {n:'Face Pulls',d:'2×12 @ 25 lbs'},
+ {n:'Dumbbell Curl',d:'2×10 @ 15 lbs'},
+ {n:'Hammer Curl',d:'2×10 @ 15 lbs'},
+ {n:'Tricep Pushdown',d:'2×12 @ 30 lbs'},
+]},
+{d:'Apr 22',dow:'TUE',type:'recovery',title:'CB Footwork Only',
+note:'No heavy lifting this week. Stay sharp and explosive for game day.',
+lifts:[
+ {n:'Agility ladder all patterns',d:'15 min'},
+ {n:'Backpedal + plant drills',d:'10 reps each way'},
+ {n:'Hip flip footwork',d:'10 reps'},
+ {n:'Lateral shuffles on turf',d:'5×10 yds'},
+ {n:'Broad Jumps on turf',d:'3×4 — not max effort'},
+ {n:'Box Jumps',d:'3×3 — tallest box available'},
+ {n:'Band hip circles',d:'2×15'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Light jog',d:'10 min'},
+]},
+{d:'Apr 23',dow:'WED',type:'recovery',title:'CB Mobility',
+note:'Light movement only. No soreness going into game week.',
+lifts:[
+ {n:'Treadmill walk',d:'15 min easy'},
+ {n:'Agility ladder',d:'10 min'},
+ {n:'Lateral shuffles on turf',d:'4×10 yds'},
+ {n:'Plank',d:'2×30s'},
+ {n:'Dead Bug',d:'2×8 each'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Band hip circles',d:'2×15'},
+ {n:'Back Extension',d:'2×10'},
+ {n:'Light calf raises',d:'2×15'},
+]},
+{d:'Apr 24',dow:'THU',type:'back',title:'Light Pull',
+note:'Last gym session before game week. Short and easy. Leave the tank full.',
+lifts:[
+ {n:'Assisted Pull-ups',d:'3×5'},
+ {n:'Lat Pulldown',d:'3×8 @ 60 lbs'},
+ {n:'Seated Cable Row',d:'3×8 @ 50 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'2×8 each @ 25 lbs'},
+ {n:'Dumbbell Curl',d:'2×10 @ 15 lbs'},
+ {n:'Hammer Curl',d:'2×10 @ 15 lbs'},
+ {n:'Incline Dumbbell Curl',d:'2×8 @ 12.5 lbs'},
+ {n:'Straight-Arm Lat Pulldown',d:'2×10 @ 50 lbs'},
+ {n:'Face Pulls',d:'2×12 @ 25 lbs'},
+]},
+{d:'Apr 25',dow:'FRI',type:'recovery',title:'Pre-Game Prep',
+note:'Game 1 is Monday Apr 28. Light movement only. Eat a massive dinner. Sleep 9+ hrs.',
+lifts:[
+ {n:'Light jog',d:'10 min easy'},
+ {n:'Agility ladder slow',d:'10 min'},
+ {n:'Backpedal drills',d:'6 reps easy'},
+ {n:'Hip flip footwork',d:'6 reps'},
+ {n:'Full body dynamic stretch',d:'15 min'},
+ {n:'Lateral shuffles on turf',d:'4×10 yds easy'},
+ {n:'Band hip circles',d:'2×15'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Visualization',d:'10 min — see yourself locking up their best WR'},
+]},
+{d:'Apr 26',dow:'SAT',type:'rest',title:'REST',note:'Game Monday. Eat big. Full rest today.'},
+{d:'Apr 27',dow:'SUN',type:'rest',title:'REST',note:'Game tomorrow. Big meal tonight. Sleep 9+ hrs. You are ready.'},
+// GAME 1
+{d:'Apr 28',dow:'MON',type:'game',title:'GAME DAY 1',
+note:'Game 1 of 3. Big breakfast. Warm up right. Play every snap like a coach is watching. Lock somebody up.',
+lifts:[
+ {n:'Big breakfast before game',d:'Eggs + oats + milk'},
+ {n:'Dynamic warm-up',d:'10 min before kickoff'},
+ {n:'Agility ladder warm-up',d:'5 min'},
+ {n:'Play every snap',d:'Stay low, trust your backpedal'},
+ {n:'Post-game big meal',d:'Protein + carbs within 30 min'},
+ {n:'Hydrate all day',d:'10+ glasses water'},
+ {n:'Ice anything sore',d:'After game'},
+ {n:'Sleep 9+ hrs tonight',d:'Recovery starts now'},
+ {n:'Weigh in tomorrow morning',d:'Before eating'},
+]},
+{d:'Apr 29',dow:'TUE',type:'recovery',title:'Post-Game Recovery',
+note:'Body is tired from the game. Active recovery only.',
+lifts:[
+ {n:'Treadmill walk',d:'15 min easy'},
+ {n:'Full body stretch',d:'15 min'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Band hip circles',d:'3×15'},
+ {n:'Lateral shuffles on turf',d:'4×10 yds easy'},
+ {n:'Dead Bug',d:'2×10 each'},
+ {n:'Back Extension',d:'2×12'},
+ {n:'Agility ladder slow',d:'10 min'},
+ {n:'Foam roll / ice sore spots',d:'10 min'},
+]},
+{d:'Apr 30',dow:'WED',type:'chest',title:'Chest + Triceps',
+note:'Back in the gym. Game over — now we build. Full send. +5 lbs from Week 2.',
+lifts:[
+ {n:'Flat Bench Press',d:'4×8 @ 65 lbs'},
+ {n:'Incline Dumbbell Press',d:'3×10 @ 25 lbs'},
+ {n:'Cable Chest Fly',d:'3×12 @ 30 lbs'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Dips (assisted)',d:'3×12 @ -25 lbs assist'},
+ {n:'Tricep Pushdown',d:'3×12 @ 30 lbs'},
+ {n:'Overhead Tricep Extension (DB)',d:'3×12 @ 20 lbs'},
+ {n:'Close-Grip Bench Press',d:'3×10 @ 55 lbs'},
+ {n:'Push-ups to failure',d:'2×max'},
+]},
+// ═══════════════════════════════════════════════════
+// MAY
+// ═══════════════════════════════════════════════════
+{d:'May 1',dow:'THU',type:'legs',title:'Legs + Jumps',
+note:'Game 2 is May 5. Train hard Mon–Thu, then taper Fri.',
+lifts:[
+ {n:'Barbell Squat',d:'4×8 @ 75 lbs'},
+ {n:'Trap Bar Deadlift',d:'3×8 @ 85 lbs'},
+ {n:'Leg Press',d:'3×12 @ 120 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Leg Extension Machine',d:'3×12 @ 50 lbs'},
+ {n:'Box Jumps',d:'4×6 — tallest box available'},
+ {n:'Broad Jumps on turf',d:'3×5'},
+ {n:'Calf Raises',d:'4×15 @ 90 lbs'},
+ {n:'Treadmill Sprints',d:'6×20s @ 11 mph / incline 6'},
+]},
+{d:'May 2',dow:'FRI',type:'recovery',title:'Pre-Game 2 Prep',
+note:'Game 2 is May 5. Light movement. Big dinner. Sleep 9+ hrs.',
+lifts:[
+ {n:'Light jog',d:'10 min easy'},
+ {n:'Agility ladder',d:'10 min'},
+ {n:'Backpedal + plant drills',d:'6 reps easy'},
+ {n:'Hip flip footwork',d:'6 reps'},
+ {n:'Full body dynamic stretch',d:'15 min'},
+ {n:'Lateral shuffles on turf',d:'4×10 yds easy'},
+ {n:'Band hip circles',d:'2×15'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Visualization',d:'10 min — lock up their best WR again'},
+]},
+{d:'May 3',dow:'SAT',type:'rest',title:'REST',note:'Game 2 is Monday. Full rest. Eat big.'},
+{d:'May 4',dow:'SUN',type:'rest',title:'REST',note:'Game 2 tomorrow. Big meal tonight. Sleep 9+ hrs.'},
+// GAME 2
+{d:'May 5',dow:'MON',type:'game',title:'GAME DAY 2',
+note:'Game 2 of 3. You got a full game under your belt now. Play faster, play smarter. Lock somebody up.',
+lifts:[
+ {n:'Big breakfast before game',d:'Eggs + oats + milk'},
+ {n:'Dynamic warm-up',d:'10 min before kickoff'},
+ {n:'Agility ladder warm-up',d:'5 min'},
+ {n:'Play every snap',d:'Trust your prep'},
+ {n:'Post-game big meal',d:'Protein + carbs within 30 min'},
+ {n:'Hydrate all day',d:'10+ glasses water'},
+ {n:'Ice anything sore',d:'After game'},
+ {n:'Sleep 9+ hrs tonight',d:'Recovery starts now'},
+ {n:'Weigh in tomorrow morning',d:'Before eating'},
+]},
+{d:'May 6',dow:'TUE',type:'recovery',title:'Post-Game Recovery',
+note:'Active recovery only. Let the body reset.',
+lifts:[
+ {n:'Treadmill walk',d:'15 min easy'},
+ {n:'Full body stretch',d:'15 min'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Band hip circles',d:'3×15'},
+ {n:'Lateral shuffles on turf',d:'4×10 yds easy'},
+ {n:'Dead Bug',d:'2×10 each'},
+ {n:'Back Extension',d:'2×12'},
+ {n:'Agility ladder slow',d:'10 min'},
+ {n:'Foam roll sore spots',d:'10 min'},
+]},
+{d:'May 7',dow:'WED',type:'back',title:'Back + Biceps',
+note:'Game 3 is May 12. Full send Wed and Thu, then taper Fri.',
+lifts:[
+ {n:'Barbell Row',d:'4×8 @ 55 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 70 lbs'},
+ {n:'Seated Cable Row',d:'3×12 @ 60 lbs'},
+ {n:'Assisted Pull-ups',d:'3×6'},
+ {n:'Single-Arm Dumbbell Row',d:'3×10 each @ 30 lbs'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Dumbbell Curl',d:'3×10 @ 20 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 20 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 17.5 lbs'},
+]},
+{d:'May 8',dow:'THU',type:'shoulders',title:'Shoulders + Traps',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×8 @ 45 lbs'},
+ {n:'Dumbbell Lateral Raise',d:'4×15 @ 12.5 lbs'},
+ {n:'Face Pulls',d:'3×15 @ 25 lbs'},
+ {n:'Front Plate Raise',d:'3×12 @ 25 lbs'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 12.5 lbs'},
+ {n:'Upright Row',d:'3×12 @ 45 lbs'},
+ {n:'Dumbbell Shrugs',d:'3×15 @ 30 lbs'},
+ {n:'KB Swing',d:'4×12 @ 30 lbs'},
+ {n:'Battle Ropes',d:'3×30s'},
+]},
+{d:'May 9',dow:'FRI',type:'recovery',title:'Pre-Game 3 Prep',
+note:'Game 3 is May 12. Last game of the 7v7 series. Light movement. Big dinner. Sleep 9+ hrs.',
+lifts:[
+ {n:'Light jog',d:'10 min easy'},
+ {n:'Agility ladder',d:'10 min'},
+ {n:'Backpedal + plant drills',d:'6 reps easy'},
+ {n:'Hip flip footwork',d:'6 reps'},
+ {n:'Full body dynamic stretch',d:'15 min'},
+ {n:'Lateral shuffles on turf',d:'4×10 yds easy'},
+ {n:'Band hip circles',d:'2×15'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Visualization',d:'10 min — best game yet'},
+]},
+{d:'May 10',dow:'SAT',type:'rest',title:'REST',note:'Game 3 Monday. Full rest. Eat big.'},
+{d:'May 11',dow:'SUN',type:'rest',title:'REST',note:'Last game tomorrow. Big meal. Sleep 9+ hrs. Go win it.'},
+// GAME 3
+{d:'May 12',dow:'MON',type:'game',title:'GAME DAY 3',
+note:'LAST GAME. 7v7 series done after this. Play your best game. No more holding back. After today — full send on the gains until July 31.',
+lifts:[
+ {n:'Big breakfast before game',d:'Eggs + oats + milk'},
+ {n:'Dynamic warm-up',d:'10 min before kickoff'},
+ {n:'Agility ladder warm-up',d:'5 min'},
+ {n:'Play every snap',d:'Best game of the series'},
+ {n:'Post-game big meal',d:'Protein + carbs within 30 min'},
+ {n:'Hydrate all day',d:'10+ glasses water'},
+ {n:'Ice anything sore',d:'After game'},
+ {n:'Sleep 9+ hrs tonight',d:'Recovery starts now'},
+ {n:'7v7 series DONE — full send starts Wed',d:''},
+]},
+{d:'May 13',dow:'TUE',type:'recovery',title:'Post-Game Recovery',
+note:'Last game done. Rest today. Full send starts Wednesday — no more games to hold back for.',
+lifts:[
+ {n:'Treadmill walk',d:'20 min easy'},
+ {n:'Full body stretch',d:'15 min'},
+ {n:'Hip flexor stretch',d:'3×30s each'},
+ {n:'Band hip circles',d:'3×15'},
+ {n:'Lateral shuffles on turf',d:'4×10 yds'},
+ {n:'Dead Bug',d:'2×10 each'},
+ {n:'Back Extension',d:'2×12'},
+ {n:'Agility ladder slow',d:'10 min'},
+ {n:'Foam roll entire body',d:'10 min'},
+]},
+// FULL SEND — Phase 2 begins May 14
+{d:'May 14',dow:'WED',type:'chest',title:'Chest + Triceps (Heavy)',
+note:'7v7 IS DONE. No more tapering. FULL SEND from now until July 31. 5×5 on bench. This is Phase 2.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×5 @ 75 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×8 @ 30 lbs'},
+ {n:'Cable Fly + Push-ups superset',d:'3×12+max'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Dips (assisted)',d:'3×10 @ -20 lbs assist'},
+ {n:'Skull Crushers (EZ bar)',d:'3×12 @ 30 lbs'},
+ {n:'Tricep Pushdown',d:'3×15 @ 30 lbs'},
+ {n:'Overhead Tricep Extension',d:'3×12 @ 22.5 lbs'},
+ {n:'Close-Grip Bench Press',d:'3×8 @ 55 lbs'},
+]},
+{d:'May 15',dow:'THU',type:'legs',title:'Legs — No Mercy',
+note:'Squat 90 lbs for 5×5 — that is your old max, now for sets. This is where size starts.',
+lifts:[
+ {n:'Barbell Squat',d:'5×5 @ 90 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×6 @ 100 lbs'},
+ {n:'Leg Press',d:'3×12 @ 150 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 20 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Box Jumps',d:'4×6 max height — tallest box — land soft, reset each rep'},
+ {n:'Broad Jumps on turf',d:'3×6'},
+ {n:'Calf Raises',d:'4×15 @ 90 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 11 mph / incline 7'},
+]},
+{d:'May 16',dow:'FRI',type:'recovery',title:'CB Athleticism',
+note:'Core circuit (3 rounds, no rest): plank 45s → hanging leg raise ×15 → cable woodchop ×12 → dead bug ×10.',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder all patterns',d:'20 min'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Hip Thrusts (barbell)',d:'4×12 @ 55 lbs'},
+ {n:'Single-Leg RDL (DB)',d:'3×10 @ 20 lbs'},
+ {n:'Glute-Ham Raise',d:'3×6'},
+ {n:'Plank',d:'3×45s'},
+ {n:'Cable Woodchop',d:'3×12 each side @ 30 lbs'},
+ {n:'Back Extension',d:'3×12'},
+]},
+{d:'May 17',dow:'SAT',type:'rest',title:'REST',note:'Eat. Sleep. Grow. Weigh yourself Monday.'},
+{d:'May 18',dow:'SUN',type:'rest',title:'REST',note:'Target: 113–114 lbs. Not there? Eat more.'},
+{d:'May 19',dow:'MON',type:'back',title:'Back + Biceps (Heavy)',
+note:'21s: 7 reps bottom half, 7 reps top half, 7 full reps. No pause.',
+lifts:[
+ {n:'Barbell Row',d:'4×8 @ 65 lbs'},
+ {n:'Lat Pulldown',d:'4×8 @ 80 lbs'},
+ {n:'Seated Cable Row',d:'3×12 @ 70 lbs'},
+ {n:'Pull-ups (attempt bodyweight)',d:'4×max'},
+ {n:'Single-Arm Dumbbell Row',d:'3×10 each @ 35 lbs'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 30 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×12 @ 17.5 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 22.5 lbs'},
+]},
+{d:'May 20',dow:'TUE',type:'shoulders',title:'Shoulders + Traps',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×8 @ 50 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 35 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 12.5 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Upright Row (barbell)',d:'3×12 @ 45 lbs'},
+ {n:'KB Swing',d:'4×15 @ 30 lbs'},
+ {n:'Battle Ropes',d:'4×30s'},
+ {n:'Dumbbell Shrugs',d:'3×15 @ 35 lbs'},
+]},
+{d:'May 21',dow:'WED',type:'chest',title:'Chest + Triceps',
+lifts:[
+ {n:'Flat Bench Press',d:'5×5 @ 80 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×8 @ 32.5 lbs'},
+ {n:'Cable Fly + Push-ups superset',d:'3×12+max'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Dips',d:'3×12 @ -15 lbs assist'},
+ {n:'Skull Crushers',d:'3×12 @ 32.5 lbs'},
+ {n:'Tricep Pushdown',d:'3×15 @ 30 lbs'},
+ {n:'Overhead Tricep Extension',d:'3×12 @ 25 lbs'},
+ {n:'Close-Grip Bench Press',d:'3×8 @ 57.5 lbs'},
+]},
+{d:'May 22',dow:'THU',type:'legs',title:'Legs — No Mercy',
+lifts:[
+ {n:'Barbell Squat',d:'5×5 @ 95 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×6 @ 105 lbs'},
+ {n:'Leg Press',d:'3×12 @ 160 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 22.5 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Box Jumps',d:'4×6 — tallest box — land soft, reset each rep'},
+ {n:'Broad Jumps on turf',d:'3×6'},
+ {n:'Calf Raises',d:'4×15 @ 90 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 11 mph / incline 7'},
+]},
+{d:'May 23',dow:'FRI',type:'recovery',title:'CB Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder',d:'20 min'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Hip Thrusts (barbell)',d:'4×12 @ 60 lbs'},
+ {n:'Single-Leg RDL (DB)',d:'3×10 @ 22.5 lbs'},
+ {n:'Glute-Ham Raise',d:'3×8'},
+ {n:'Plank',d:'3×45s'},
+ {n:'Cable Woodchop',d:'3×12 each side @ 30 lbs'},
+ {n:'Back Extension',d:'3×12'},
+]},
+{d:'May 24',dow:'SAT',type:'rest',title:'REST',note:'Rest hard.'},
+{d:'May 25',dow:'SUN',type:'rest',title:'REST',note:'Optional: 20 min walk + stretch.'},
+{d:'May 26',dow:'MON',type:'back',title:'Back + Biceps',
+lifts:[
+ {n:'Barbell Row',d:'4×8 @ 70 lbs'},
+ {n:'Lat Pulldown',d:'4×8 @ 85 lbs'},
+ {n:'Seated Cable Row',d:'3×12 @ 75 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Single-Arm Dumbbell Row',d:'3×10 each @ 37.5 lbs'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 32.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×12 @ 20 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 25 lbs'},
+]},
+{d:'May 27',dow:'TUE',type:'shoulders',title:'Shoulders + Traps',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×8 @ 55 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 37.5 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 15 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Upright Row',d:'3×12 @ 47.5 lbs'},
+ {n:'KB Swing',d:'4×15 @ 32.5 lbs'},
+ {n:'Battle Ropes',d:'4×30s'},
+ {n:'Dumbbell Shrugs',d:'3×15 @ 37.5 lbs'},
+]},
+{d:'May 28',dow:'WED',type:'chest',title:'Chest + Triceps',
+note:'Triple digits on bench coming soon. Push hard.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×5 @ 85 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×8 @ 35 lbs'},
+ {n:'Cable Fly + Push-ups superset',d:'3×12+max'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Dips',d:'3×12 @ -15 lbs assist'},
+ {n:'Skull Crushers',d:'3×12 @ 35 lbs'},
+ {n:'Tricep Pushdown',d:'3×15 @ 30 lbs'},
+ {n:'Overhead Tricep Extension',d:'3×12 @ 27.5 lbs'},
+ {n:'Close-Grip Bench Press',d:'3×8 @ 60 lbs'},
+]},
+{d:'May 29',dow:'THU',type:'legs',title:'Legs — No Mercy',
+note:'100 lbs squat. Triple digits. Lock it in.',
+lifts:[
+ {n:'Barbell Squat',d:'5×5 @ 100 lbs 🔒'},
+ {n:'Trap Bar Deadlift',d:'4×6 @ 110 lbs'},
+ {n:'Leg Press',d:'3×12 @ 170 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 25 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Box Jumps',d:'4×6 — tallest box — land soft, reset each rep'},
+ {n:'Broad Jumps on turf',d:'3×6'},
+ {n:'Calf Raises',d:'4×15 @ 90 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 7'},
+]},
+{d:'May 30',dow:'FRI',type:'recovery',title:'CB Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder',d:'20 min'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Hip Thrusts (barbell)',d:'4×12 @ 65 lbs'},
+ {n:'Single-Leg RDL (DB)',d:'3×10 @ 25 lbs'},
+ {n:'Glute-Ham Raise',d:'3×8'},
+ {n:'Plank',d:'3×50s'},
+ {n:'Cable Woodchop',d:'3×12 each side @ 30 lbs'},
+ {n:'Back Extension',d:'3×12'},
+]},
+{d:'May 31',dow:'SAT',type:'rest',title:'REST',note:'End of May. You should be at ~115 lbs. Eat more if not.'},
+// ═══════════════════════════════════════════════════
+// JUNE — Phase 2 continues → Phase 3 begins
+// ═══════════════════════════════════════════════════
+{d:'Jun 1',dow:'SUN',type:'rest',title:'REST',note:'June starts tomorrow. Phase 3 incoming.'},
+{d:'Jun 2',dow:'MON',type:'back',title:'Back + Biceps (Heavy)',
+lifts:[
+ {n:'Barbell Row',d:'4×8 @ 75 lbs'},
+ {n:'Lat Pulldown',d:'4×8 @ 90 lbs'},
+ {n:'Seated Cable Row',d:'3×12 @ 80 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Single-Arm Dumbbell Row',d:'3×10 each @ 40 lbs'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 35 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×12 @ 22.5 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 27.5 lbs'},
+]},
+{d:'Jun 3',dow:'TUE',type:'shoulders',title:'Shoulders + Traps',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×8 @ 60 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 40 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 15 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Upright Row',d:'3×12 @ 50 lbs'},
+ {n:'KB Swing',d:'4×15 @ 35 lbs'},
+ {n:'Battle Ropes',d:'4×30s'},
+ {n:'Dumbbell Shrugs',d:'3×15 @ 40 lbs'},
+]},
+{d:'Jun 4',dow:'WED',type:'chest',title:'Chest + Triceps',
+note:'90 lbs on bench. End of Phase 2 range. Phase 3 starts next week — heavy triples.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×5 @ 90 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×8 @ 37.5 lbs'},
+ {n:'Cable Fly + Push-ups superset',d:'3×12+max'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Dips',d:'3×12 @ -10 lbs assist'},
+ {n:'Skull Crushers',d:'3×12 @ 37.5 lbs'},
+ {n:'Tricep Pushdown',d:'3×15 @ 30 lbs'},
+ {n:'Overhead Tricep Extension',d:'3×12 @ 30 lbs'},
+ {n:'Close-Grip Bench Press',d:'3×8 @ 62.5 lbs'},
+]},
+{d:'Jun 5',dow:'THU',type:'legs',title:'Legs — No Mercy',
+lifts:[
+ {n:'Barbell Squat',d:'5×5 @ 105 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×6 @ 115 lbs'},
+ {n:'Leg Press',d:'3×12 @ 180 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 27.5 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Box Jumps',d:'4×6 — tallest box — explode max height'},
+ {n:'Broad Jumps on turf',d:'3×6'},
+ {n:'Calf Raises',d:'4×15 @ 90 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jun 6',dow:'FRI',type:'recovery',title:'CB Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder',d:'20 min'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Hip Thrusts (barbell)',d:'4×12 @ 70 lbs'},
+ {n:'Single-Leg RDL (DB)',d:'3×10 @ 27.5 lbs'},
+ {n:'Glute-Ham Raise',d:'3×10'},
+ {n:'Plank',d:'3×50s'},
+ {n:'Cable Woodchop',d:'3×12 each side @ 30 lbs'},
+ {n:'Back Extension',d:'3×12'},
+]},
+{d:'Jun 7',dow:'SAT',type:'rest',title:'REST',note:'Rest hard. Phase 3 starts Monday.'},
+{d:'Jun 8',dow:'SUN',type:'rest',title:'REST',note:'Phase 3 tomorrow. Heavy triples. Max effort every session.'},
+// PHASE 3 starts Jun 9
+{d:'Jun 9',dow:'MON',type:'chest',title:'Upper — Max Effort',
+note:'PHASE 3 STARTS. Heavy triples — 5×3. Pick a weight where 3 reps is a grind. Rest 3 min between sets.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 95 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 40 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ -10 lbs assist'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 50 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Barbell Curl',d:'4×8 @ 40 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 22.5 lbs'},
+]},
+{d:'Jun 10',dow:'TUE',type:'legs',title:'Lower Body Power',
+note:'Depth jumps: step OFF the box, land, then explode up immediately. React fast off the ground.',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 110 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 130 lbs'},
+ {n:'Leg Press',d:'3×10 @ 200 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 30 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps',d:'4×5'},
+ {n:'Broad Jumps on turf',d:'4×5 max effort'},
+ {n:'KB Swing (explosive)',d:'4×15 @ 35 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jun 11',dow:'WED',type:'recovery',title:'CB Peak Athleticism',
+note:'Farmer carries: grab heavy DBs, walk 40 yds, set down, rest 30s. Builds grip, traps, and total-body stability.',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder max speed',d:'20 min'},
+ {n:'Hip Thrusts (barbell)',d:'4×10 @ 65 lbs'},
+ {n:'Single-Leg RDL (DB)',d:'3×10 @ 27.5 lbs'},
+ {n:'Glute-Ham Raise',d:'3×10'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 40 lb DBs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×50s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jun 12',dow:'THU',type:'back',title:'Pull + Posterior',
+note:'Pull-up ladder: 1 rep → rest 10s → 2 reps → rest 10s... up to 8. That is 36 total reps.',
+lifts:[
+ {n:'Barbell Row',d:'5×5 @ 85 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 100 lbs'},
+ {n:'Seated Cable Row',d:'3×10 @ 90 lbs'},
+ {n:'Pull-up ladder 1→8 reps',d:'1 full round'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 35 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 30 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 25 lbs'},
+]},
+{d:'Jun 13',dow:'FRI',type:'shoulders',title:'Full Body Conditioning',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×6 @ 65 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 45 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 17.5 lbs'},
+ {n:'Upright Row',d:'3×12 @ 50 lbs'},
+ {n:'KB Swing + Box Jump superset',d:'4×15+5 @ 25 lbs'},
+ {n:'Battle Ropes',d:'5×30s'},
+ {n:'Farmer Carry + Hanging Leg Raise superset',d:'3×40yd+12'},
+ {n:'Treadmill finisher',d:'5×20s all out'},
+]},
+{d:'Jun 14',dow:'SAT',type:'rest',title:'REST',note:'Rest hard. Phase 3 Week 1 done.'},
+{d:'Jun 15',dow:'SUN',type:'rest',title:'REST',note:'Optional: 20 min walk + full stretch.'},
+{d:'Jun 16',dow:'MON',type:'chest',title:'Upper — Max Effort',
+note:'100 lbs on bench. Triple digits. You started at 70.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 100 lbs 🔒'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 42.5 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ bodyweight'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 52.5 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Barbell Curl',d:'4×8 @ 42.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 25 lbs'},
+]},
+{d:'Jun 17',dow:'TUE',type:'legs',title:'Lower Body Power',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 115 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 135 lbs'},
+ {n:'Leg Press',d:'3×10 @ 210 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 32.5 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps',d:'4×5'},
+ {n:'Broad Jumps on turf',d:'4×5'},
+ {n:'KB Swing',d:'4×15 @ 37.5 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jun 18',dow:'WED',type:'recovery',title:'CB Peak Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder max speed',d:'20 min'},
+ {n:'Hip Thrusts',d:'4×10 @ 70 lbs'},
+ {n:'Single-Leg RDL',d:'3×10 @ 30 lbs'},
+ {n:'Glute-Ham Raise',d:'3×10'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 42.5 lbs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×55s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jun 19',dow:'THU',type:'back',title:'Pull + Posterior',
+lifts:[
+ {n:'Barbell Row',d:'5×5 @ 90 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 105 lbs'},
+ {n:'Seated Cable Row',d:'3×10 @ 95 lbs'},
+ {n:'Pull-up ladder 1→8',d:'1 full round'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 37.5 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 32.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 27.5 lbs'},
+]},
+{d:'Jun 20',dow:'FRI',type:'shoulders',title:'Full Body Conditioning',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×6 @ 70 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 47.5 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 20 lbs'},
+ {n:'Upright Row',d:'3×12 @ 52.5 lbs'},
+ {n:'KB Swing + Box Jump superset',d:'4×15+5 @ 25 lbs'},
+ {n:'Battle Ropes',d:'5×30s'},
+ {n:'Farmer Carry + Hanging Leg Raise superset',d:'3×40yd+15'},
+ {n:'Treadmill finisher',d:'5×20s all out'},
+]},
+{d:'Jun 21',dow:'SAT',type:'rest',title:'REST',note:'Rest hard.'},
+{d:'Jun 22',dow:'SUN',type:'rest',title:'REST',note:''},
+{d:'Jun 23',dow:'MON',type:'chest',title:'Upper — Max Effort',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 105 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 45 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ bodyweight'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 55 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Barbell Curl',d:'4×8 @ 45 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 27.5 lbs'},
+]},
+{d:'Jun 24',dow:'TUE',type:'legs',title:'Lower Body Power',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 120 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 140 lbs'},
+ {n:'Leg Press',d:'3×10 @ 220 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 35 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps',d:'4×5'},
+ {n:'Broad Jumps on turf',d:'4×5'},
+ {n:'KB Swing',d:'4×15 @ 40 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jun 25',dow:'WED',type:'recovery',title:'CB Peak Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder max speed',d:'20 min'},
+ {n:'Hip Thrusts',d:'4×10 @ 75 lbs'},
+ {n:'Single-Leg RDL',d:'3×10 @ 32.5 lbs'},
+ {n:'Glute-Ham Raise',d:'3×12'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 45 lbs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×55s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jun 26',dow:'THU',type:'back',title:'Pull + Posterior',
+lifts:[
+ {n:'Barbell Row',d:'5×5 @ 95 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 110 lbs'},
+ {n:'Seated Cable Row',d:'3×10 @ 100 lbs'},
+ {n:'Pull-up ladder 1→8',d:'1 full round'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 40 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 35 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 30 lbs'},
+]},
+{d:'Jun 27',dow:'FRI',type:'shoulders',title:'Full Body Conditioning',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×6 @ 72.5 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 50 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 20 lbs'},
+ {n:'Upright Row',d:'3×12 @ 55 lbs'},
+ {n:'KB Swing + Box Jump superset',d:'4×15+5 @ 25 lbs'},
+ {n:'Battle Ropes',d:'5×30s'},
+ {n:'Farmer Carry + Hanging Leg Raise superset',d:'3×40yd+15'},
+ {n:'Treadmill finisher',d:'5×20s all out'},
+]},
+{d:'Jun 28',dow:'SAT',type:'rest',title:'REST',note:'Last week of June. You should be at 118+ lbs. Eat more if not.'},
+{d:'Jun 29',dow:'SUN',type:'rest',title:'REST',note:'July is the final month. Peak intensity every session.'},
+// ═══════════════════════════════════════════════════
+// JULY — Final Month, Peak Phase
+// ═══════════════════════════════════════════════════
+{d:'Jun 30',dow:'MON',type:'chest',title:'Upper — Max Effort',
+note:'Final month begins. Leave everything in this gym until July 31.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 110 lbs 🏆'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 47.5 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ +10 lbs added'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 57.5 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Barbell Curl',d:'4×8 @ 47.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 30 lbs'},
+]},
+{d:'Jul 1',dow:'TUE',type:'legs',title:'Lower — Peak Power',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 125 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 145 lbs'},
+ {n:'Leg Press',d:'3×10 @ 230 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 37.5 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps',d:'4×5'},
+ {n:'Broad Jumps on turf',d:'4×5 max effort'},
+ {n:'KB Swing',d:'4×15 @ 40 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jul 2',dow:'WED',type:'recovery',title:'CB Peak Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder max speed',d:'20 min'},
+ {n:'Hip Thrusts',d:'4×10 @ 80 lbs'},
+ {n:'Single-Leg RDL',d:'3×10 @ 35 lbs'},
+ {n:'Glute-Ham Raise',d:'3×12'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 47.5 lbs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×60s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jul 3',dow:'THU',type:'back',title:'Pull + Posterior',
+lifts:[
+ {n:'Barbell Row',d:'5×5 @ 100 lbs 🏆'},
+ {n:'Lat Pulldown',d:'3×10 @ 115 lbs'},
+ {n:'Seated Cable Row',d:'3×10 @ 105 lbs'},
+ {n:'Pull-up ladder 1→8',d:'1 full round'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 42.5 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 37.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 32.5 lbs'},
+]},
+{d:'Jul 4',dow:'FRI',type:'shoulders',title:'Full Body Conditioning',
+note:'July 4th. Most kids are off. You are in the gym at 5am. That is the difference.',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×6 @ 75 lbs 🏆'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 52.5 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 22.5 lbs'},
+ {n:'Upright Row',d:'3×12 @ 57.5 lbs'},
+ {n:'KB Swing + Box Jump superset',d:'4×15+5 @ 25 lbs'},
+ {n:'Battle Ropes',d:'5×30s'},
+ {n:'Farmer Carry + Hanging Leg Raise superset',d:'3×40yd+15'},
+ {n:'Treadmill finisher',d:'5×20s all out'},
+]},
+{d:'Jul 5',dow:'SAT',type:'rest',title:'REST',note:'Rest hard. 4 weeks left.'},
+{d:'Jul 6',dow:'SUN',type:'rest',title:'REST',note:''},
+{d:'Jul 7',dow:'MON',type:'chest',title:'Upper — Max Effort',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 112.5 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 50 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ +10 lbs added'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 60 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Barbell Curl',d:'4×8 @ 50 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 32.5 lbs'},
+]},
+{d:'Jul 8',dow:'TUE',type:'legs',title:'Lower — Peak Power',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 127.5 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 147.5 lbs'},
+ {n:'Leg Press',d:'3×10 @ 240 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 40 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps',d:'4×5'},
+ {n:'Broad Jumps on turf',d:'4×5'},
+ {n:'KB Swing',d:'4×15 @ 42.5 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jul 9',dow:'WED',type:'recovery',title:'CB Peak Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder max speed',d:'20 min'},
+ {n:'Hip Thrusts',d:'4×10 @ 82.5 lbs'},
+ {n:'Single-Leg RDL',d:'3×10 @ 37.5 lbs'},
+ {n:'Glute-Ham Raise',d:'3×12'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 50 lbs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×60s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jul 10',dow:'THU',type:'back',title:'Pull + Posterior',
+lifts:[
+ {n:'Barbell Row',d:'5×5 @ 102.5 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 117.5 lbs'},
+ {n:'Seated Cable Row',d:'3×10 @ 107.5 lbs'},
+ {n:'Pull-up ladder 1→8',d:'1 full round'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 45 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 40 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 35 lbs'},
+]},
+{d:'Jul 11',dow:'FRI',type:'shoulders',title:'Full Body Conditioning',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×6 @ 77.5 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 55 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 22.5 lbs'},
+ {n:'Upright Row',d:'3×12 @ 60 lbs'},
+ {n:'KB Swing + Box Jump superset',d:'4×15+5 @ 25 lbs'},
+ {n:'Battle Ropes',d:'5×30s'},
+ {n:'Farmer Carry + Hanging Leg Raise superset',d:'3×40yd+15'},
+ {n:'Treadmill finisher',d:'5×20s all out'},
+]},
+{d:'Jul 12',dow:'SAT',type:'rest',title:'REST',note:'3 weeks left. Keep eating 3000+ calories.'},
+{d:'Jul 13',dow:'SUN',type:'rest',title:'REST',note:''},
+{d:'Jul 14',dow:'MON',type:'chest',title:'Upper — Max Effort',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 115 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 52.5 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ +10 lbs added'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 62.5 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max — aim for 8+'},
+ {n:'Barbell Curl',d:'4×8 @ 52.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 35 lbs'},
+]},
+{d:'Jul 15',dow:'TUE',type:'legs',title:'Lower — Peak Power',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 130 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 150 lbs'},
+ {n:'Leg Press',d:'3×10 @ 250 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 42.5 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps',d:'4×5'},
+ {n:'Broad Jumps on turf',d:'4×5 measure your best'},
+ {n:'KB Swing',d:'4×15 @ 45 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jul 16',dow:'WED',type:'recovery',title:'CB Peak Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder max speed',d:'20 min'},
+ {n:'Hip Thrusts',d:'4×10 @ 85 lbs'},
+ {n:'Single-Leg RDL',d:'3×10 @ 40 lbs'},
+ {n:'Glute-Ham Raise',d:'3×12'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 52.5 lbs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×60s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jul 17',dow:'THU',type:'back',title:'Pull + Posterior',
+lifts:[
+ {n:'Barbell Row',d:'5×5 @ 105 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 120 lbs'},
+ {n:'Seated Cable Row',d:'3×10 @ 110 lbs'},
+ {n:'Pull-up ladder 1→8',d:'1 full round'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 47.5 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 42.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 37.5 lbs'},
+]},
+{d:'Jul 18',dow:'FRI',type:'shoulders',title:'Full Body Conditioning',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×6 @ 80 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 57.5 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 25 lbs'},
+ {n:'Upright Row',d:'3×12 @ 62.5 lbs'},
+ {n:'KB Swing + Box Jump superset',d:'4×15+5 @ 25 lbs'},
+ {n:'Battle Ropes',d:'5×30s'},
+ {n:'Farmer Carry + Hanging Leg Raise superset',d:'3×40yd+15'},
+ {n:'Treadmill finisher',d:'5×20s all out'},
+]},
+{d:'Jul 19',dow:'SAT',type:'rest',title:'REST',note:'2 weeks left. Final push. Don\'t stop eating.'},
+{d:'Jul 20',dow:'SUN',type:'rest',title:'REST',note:''},
+{d:'Jul 21',dow:'MON',type:'chest',title:'Upper — Max Effort',
+note:'2 weeks left. Leave nothing in the tank.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 117.5 lbs'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 55 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ +10 lbs added'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 65 lbs'},
+ {n:'Pull-ups bodyweight',d:'4×max'},
+ {n:'Barbell Curl',d:'4×8 @ 55 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 37.5 lbs'},
+]},
+{d:'Jul 22',dow:'TUE',type:'legs',title:'Lower — Peak Power',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 132.5 lbs'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 152.5 lbs'},
+ {n:'Leg Press',d:'3×10 @ 260 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 45 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps',d:'4×5'},
+ {n:'Broad Jumps on turf',d:'4×5'},
+ {n:'KB Swing',d:'4×15 @ 45 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s @ 12 mph / incline 8'},
+]},
+{d:'Jul 23',dow:'WED',type:'recovery',title:'CB Peak Athleticism',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder max speed',d:'20 min'},
+ {n:'Hip Thrusts',d:'4×10 @ 87.5 lbs'},
+ {n:'Single-Leg RDL',d:'3×10 @ 42.5 lbs'},
+ {n:'Glute-Ham Raise',d:'3×12'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 55 lbs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×60s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jul 24',dow:'THU',type:'back',title:'Pull + Posterior',
+lifts:[
+ {n:'Barbell Row',d:'5×5 @ 107.5 lbs'},
+ {n:'Lat Pulldown',d:'3×10 @ 122.5 lbs'},
+ {n:'Seated Cable Row',d:'3×10 @ 112.5 lbs'},
+ {n:'Pull-up ladder 1→8',d:'1 full round'},
+ {n:'Straight-Arm Lat Pulldown',d:'3×12 @ 50 lbs'},
+ {n:'Face Pulls',d:'4×15 @ 25 lbs'},
+ {n:'Barbell Curl 21s',d:'3 sets @ 50 lbs'},
+ {n:'Hammer Curl',d:'3×12 @ 45 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 40 lbs'},
+]},
+{d:'Jul 25',dow:'FRI',type:'shoulders',title:'Full Body Conditioning',
+lifts:[
+ {n:'Overhead Barbell Press',d:'4×6 @ 82.5 lbs'},
+ {n:'Dumbbell Shrugs',d:'4×15 @ 60 lbs'},
+ {n:'Lateral + Front Raise superset',d:'3×15+12'},
+ {n:'Rear Delt Fly (DB)',d:'3×15 @ 25 lbs'},
+ {n:'Upright Row',d:'3×12 @ 65 lbs'},
+ {n:'KB Swing + Box Jump superset',d:'4×15+5 @ 25 lbs'},
+ {n:'Battle Ropes',d:'5×30s'},
+ {n:'Farmer Carry + Hanging Leg Raise superset',d:'3×40yd+15'},
+ {n:'Treadmill finisher',d:'5×20s all out'},
+]},
+{d:'Jul 26',dow:'SAT',type:'rest',title:'REST',note:'Last week. Final 5 sessions. Don\'t you dare skip.'},
+{d:'Jul 27',dow:'SUN',type:'rest',title:'REST',note:'Last week starts tomorrow. Finish what you started April 7.'},
+{d:'Jul 28',dow:'MON',type:'chest',title:'Upper — FINAL WEEK',
+note:'LAST WEEK. 5 sessions left. Leave everything in this gym.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 120 lbs 🏆'},
+ {n:'Incline Dumbbell Press',d:'4×6 @ 57.5 lbs'},
+ {n:'Weighted Dips',d:'4×8 @ +10 lbs added'},
+ {n:'Pec Deck Machine',d:'3×12 @ 40 lbs'},
+ {n:'Cable Fly',d:'3×12 @ 30 lbs'},
+ {n:'Single-Arm Dumbbell Row',d:'4×8 each @ 67.5 lbs'},
+ {n:'Pull-ups bodyweight — hit 10',d:'4×max'},
+ {n:'Barbell Curl',d:'4×8 @ 57.5 lbs'},
+ {n:'Incline Dumbbell Curl',d:'3×10 @ 40 lbs'},
+]},
+{d:'Jul 29',dow:'TUE',type:'legs',title:'Lower — FINAL WEEK',
+note:'50+ lbs on squat over where you started. For reps. That is real strength.',
+lifts:[
+ {n:'Barbell Squat',d:'5×3 @ 135 lbs 🏆'},
+ {n:'Trap Bar Deadlift',d:'4×5 @ 155 lbs 🏆'},
+ {n:'Leg Press',d:'3×10 @ 270 lbs'},
+ {n:'Bulgarian Split Squat (DB)',d:'3×8 each @ 47.5 lbs'},
+ {n:'Leg Curl Machine',d:'3×12 @ 50 lbs'},
+ {n:'Depth Jumps — measure your best',d:'4×5'},
+ {n:'Broad Jumps on turf — measure your best',d:'4×5'},
+ {n:'KB Swing',d:'4×15 @ 45 lbs'},
+ {n:'Treadmill Sprints',d:'8×20s all out'},
+]},
+{d:'Jul 30',dow:'WED',type:'recovery',title:'CB Final Athleticism',
+note:'Second to last session. Go all out on the agility work.',
+lifts:[
+ {n:'Treadmill jog',d:'15 min'},
+ {n:'Agility ladder — fastest ever',d:'20 min'},
+ {n:'Hip Thrusts',d:'4×10 @ 90 lbs'},
+ {n:'Single-Leg RDL',d:'3×10 @ 45 lbs'},
+ {n:'Glute-Ham Raise',d:'3×12'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 57.5 lbs'},
+ {n:'Lateral band walks',d:'4×15'},
+ {n:'Plank',d:'3×60s'},
+ {n:'Cable Woodchop',d:'3×12 each @ 30 lbs'},
+]},
+{d:'Jul 31',dow:'THU',type:'chest',title:'Final Day 🏆',
+note:'LAST SESSION. April 7 to July 31. 116 days. 5am every time. Weigh yourself tomorrow morning. You are not the same person who started this.',
+lifts:[
+ {n:'Flat Bench Press',d:'5×3 @ 120 lbs — feel it'},
+ {n:'Barbell Squat',d:'3×3 @ 135 lbs — finish strong'},
+ {n:'Pull-ups bodyweight',d:'4×max — every rep counts'},
+ {n:'Overhead Barbell Press',d:'3×5 @ 82.5 lbs'},
+ {n:'Barbell Row',d:'3×5 @ 107.5 lbs'},
+ {n:'Battle Ropes',d:'5×30s — go all out'},
+ {n:'Farmer Carries on turf',d:'4×40 yds @ 57.5 lbs'},
+ {n:'Treadmill Sprint — final one',d:'5×20s absolute max'},
+ {n:'KB Swing',d:'4×15 @ 45 lbs — finish it'},
+]},
+];
+
+// ── BUILD MONTH TABS ──────────────────────────────────────────────
+const MONTH_RANGES=[
+  {label:'April',   sub:'Apr 7–30 · Game 1: Apr 28'},
+  {label:'May',     sub:'May 1–31 · Game 2: May 5 · Game 3: May 12'},
+  {label:'June',    sub:'Jun 1–30 · Phase 3 Starts Jun 9'},
+  {label:'July',    sub:'Jul 1–31 · Final Day: Jul 31'},
+];
+const MONTH_START_DOW={April:0,May:2,June:0,July:2};// Mon=0 offset for first cell
+// Actually compute offsets from dates
+// Apr 7 = Monday. Apr 1 = Tuesday (offset 1)
+// May 1 = Thursday (offset 3)
+// Jun 1 = Sunday (offset 6)
+// Jul 1 = Tuesday (offset 1) — wait: Jun has 30 days, Jun 1=Sun → Jul 1 = Tue
+const M_OFFSET={April:1,May:3,June:6,July:1};
+const M_DAYS_COUNT={April:30,May:31,June:30,July:31};
+
+// Map each ALL entry to its calendar date number and month
+const MONTH_NAMES=['April','May','June','July'];
+function parseDateStr(s){
+  const [mon,d]=s.split(' ');
+  const mi={'Jan':1,'Feb':2,'Mar':3,'Apr':4,'May':5,'Jun':6,'Jul':7}[mon];
+  return{m:mi,d:parseInt(d)};
+}
+// assign abs index FIRST before spreading into byMonth
+let globalAbsIdx=0;
+ALL.forEach(e=>{ e._absIdx=(e.type!=='rest')?globalAbsIdx++:-1; });
+
+// group entries by month (spread AFTER _absIdx is set)
+const byMonth={April:[],May:[],June:[],July:[]};
+const mMap={4:'April',5:'May',6:'June',7:'July'};
+ALL.forEach((entry,i)=>{
+  const{m,d}=parseDateStr(entry.d);
+  const mn=mMap[m];
+  if(mn) byMonth[mn].push({...entry,_dayNum:d,_idx:i});
+});
+
+// stripe / tag colors (SC and TC already declared above)
+const TITLES={
+  'Chest + Triceps':'CHEST','Chest + Triceps (Heavy)':'CHEST','Upper — Max Effort':'UPPER','Upper — FINAL WEEK':'UPPER','Light Upper Body':'LIGHT',
+  'Legs + Jumps':'LEGS','Legs — No Mercy':'LEGS','Lower Body Power':'POWER','Lower — Peak Power':'POWER','Lower — FINAL WEEK':'POWER','Light Legs':'LIGHT',
+  'Back + Biceps':'BACK','Back + Biceps (Heavy)':'BACK','Pull + Posterior':'PULL','Light Pull':'LIGHT',
+  'Shoulders + Traps':'SHOULDER','Shoulders + Core':'SHOULDER','Full Body Conditioning':'FULL BODY','Full Body — Peak':'FULL BODY',
+  'Recovery + Core':'RECOVERY','CB Athleticism':'CB WORK','CB Peak Athleticism':'CB PEAK','CB Footwork Only':'CB DRILL','CB Mobility':'CB MOB','Pre-Game Prep':'PRE-GAME','Pre-Game 2 Prep':'PRE-GAME','Pre-Game 3 Prep':'PRE-GAME','Post-Game Recovery':'RECOVERY','CB Final Athleticism':'CB PEAK',
+  'GAME DAY 1':'GAME 1 🏈','GAME DAY 2':'GAME 2 🏈','GAME DAY 3':'GAME 3 🏈',
+  'REST':'REST','Final Day 🏆':'DONE 🏆',
+};
+
+// build tabs
+const tabsEl=document.getElementById('mtabs');
+const monthsEl=document.getElementById('months');
+MONTH_NAMES.forEach((mn,mi)=>{
+  const btn=document.createElement('button');
+  btn.className='mtab'+(mi===0?' active':'');
+  btn.textContent=mn;
+  btn.onclick=()=>{
+    document.querySelectorAll('.mtab').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.mcontent').forEach(c=>c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('mc-'+mn).classList.add('active');
+  };
+  tabsEl.appendChild(btn);
+
+  const mc=document.createElement('div');
+  mc.className='mcontent'+(mi===0?' active':'');
+  mc.id='mc-'+mn;
+  mc.innerHTML=`<div class="cal-wrap">
+    <div class="mlabel">${mn}</div>
+    <div class="msub">${MONTH_RANGES[mi].sub}</div>
+    <div class="dow-row"><div class="dow">Mon</div><div class="dow">Tue</div><div class="dow">Wed</div><div class="dow">Thu</div><div class="dow">Fri</div><div class="dow">Sat</div><div class="dow">Sun</div></div>
+    <div class="cal-grid" id="cg-${mn}"></div>
+  </div>`;
+  monthsEl.appendChild(mc);
+});
+
+// build each month grid
+MONTH_NAMES.forEach(mn=>{
+  const grid=document.getElementById('cg-'+mn);
+  const offset=M_OFFSET[mn];
+  const totalDays=M_DAYS_COUNT[mn];
+  const entries=byMonth[mn];
+  // build lookup by day number
+  const byDay={};
+  entries.forEach(e=>byDay[e._dayNum]=e);
+
+  // empty cells for offset
+  for(let i=0;i<offset;i++){
+    const emp=document.createElement('div');
+    emp.className='cd empty';
+    grid.appendChild(emp);
+  }
+  // day cells
+  for(let day=1;day<=totalDays;day++){
+    const entry=byDay[day];
+    const isRest=!entry||entry.type==='rest';
+    const isGame=entry&&entry.type==='game';
+    const div=document.createElement('div');
+    div.className='cd'+(isRest?' rest':'')+(isGame?' game':'');
+
+    const stripe=document.createElement('div');
+    stripe.className='cd-stripe';
+    stripe.style.background=entry?SC[entry.type]||'#222':'#111';
+    div.appendChild(stripe);
+
+    const dateEl=document.createElement('div');
+    dateEl.className='cd-date';
+    dateEl.textContent=mn.substring(0,3)+' '+day;
+    div.appendChild(dateEl);
+
+    if(entry){
+      const dowEl=document.createElement('span');
+      dowEl.className='cd-dow';
+      dowEl.textContent=entry.dow;
+      dowEl.style.color=TC[entry.type]||'#333';
+      div.appendChild(dowEl);
+
+      const titleEl=document.createElement('div');
+      titleEl.className='cd-title';
+      titleEl.textContent=TITLES[entry.title]||entry.title;
+      div.appendChild(titleEl);
+
+      if(!isRest&&entry.lifts&&entry.lifts.length>0){
+        const prev=document.createElement('div');
+        prev.className='cd-preview';
+        prev.textContent=entry.lifts.slice(0,2).map(l=>l.n.split(' ').slice(0,2).join(' ')).join(' · ');
+        div.appendChild(prev);
+        div.onclick=()=>openPanel(entry);
+      }
+    }
+    grid.appendChild(div);
+  }
+});
+
+// ── PANEL ─────────────────────────────────────────────────────────
+const ABS_POOL=[
+  {n:'Ab Abductor Machine', d:'3×10 @ 50 lbs'},
+  {n:'Hanging Leg Raises', d:'3×10 bodyweight'},
+  {n:'Rotary Torso Machine', d:'3×10 each side @ 30 lbs'},
+  {n:'Weighted Decline Sit-ups', d:'3×10 @ 10 lbs', note:'Hold plate on chest, feet locked in decline bench'},
+];
+function getAbs(i){return[0,1,2].map(j=>ABS_POOL[(i+j)%4]);}
+
+// ── SPRINT DRILL DATA ─────────────────────────────────────────────
+// Legs days get mechanics + acceleration work
+// Recovery days get form drills + band/hill work
+// Rotates between 3 drill combos based on day index
+const SPRINT_LEGS = [
+  [
+    {n:'A-Skip drill',d:'3×20 yds',note:'Drive knee up to hip height, stay on toes'},
+    {n:'B-Skip drill',d:'3×20 yds',note:'Same as A-skip but extend the leg forward at top'},
+    {n:'High Knees',d:'3×15 yds',note:'Fast feet, pump arms hard'},
+    {n:'Standing broad jump warm-up',d:'5 reps',note:'Full effort, stick the landing'},
+    {n:'Acceleration sprints',d:'6×20 yds',note:'Drive hard first 10 yards, do NOT slow down'},
+  ],
+  [
+    {n:'A-Skip drill',d:'3×20 yds',note:'Drive knee up, stay tall'},
+    {n:'Arm swing drill',d:'3×20s',note:'Stand still, drive arms 90°, no crossing body'},
+    {n:'Wall drive drill',d:'3×10 each',note:'Hands on wall, drive knee up explosively'},
+    {n:'Falling starts',d:'6 reps',note:'Lean forward til you fall, then explode into sprint'},
+    {n:'Acceleration sprints',d:'6×30 yds',note:'Max effort every rep, walk back reset'},
+  ],
+  [
+    {n:'A-Skip + B-Skip combo',d:'3×20 yds each'},
+    {n:'Butt kicks',d:'3×15 yds',note:'Heels to glutes fast, stay on toes'},
+    {n:'Sprint start drill',d:'6 reps',note:'3-point stance start, explode on go'},
+    {n:'Flying 20s',d:'4 reps',note:'Jog 10 yds to build speed, then sprint 20 yds all out'},
+    {n:'Deceleration + reacceleration',d:'4 reps',note:'Sprint 15, slow to jog, sprint 15 again — CB skill'},
+  ],
+];
+const SPRINT_RECOVERY = [
+  [
+    {n:'A-Skip drill',d:'2×20 yds',note:'Focus on form, not speed'},
+    {n:'High Knees',d:'2×15 yds'},
+    {n:'Resistance band sprints',d:'6×20 yds',note:'Dad holds band at your waist — drive through resistance'},
+    {n:'Backpedal to sprint',d:'6 reps',note:'Backpedal 5 yds, plant, explode 20 yds forward — CB drill'},
+  ],
+  [
+    {n:'A-Skip drill',d:'2×20 yds'},
+    {n:'Arm swing drill',d:'2×20s',note:'90° arms, no crossing body'},
+    {n:'Hill sprints (or treadmill 15% incline)',d:'8×20 yds',note:'Walk down for rest — nothing builds speed faster'},
+    {n:'Lateral shuffle to sprint',d:'6 reps',note:'Shuffle 5 yds each way, then explode straight ahead'},
+  ],
+  [
+    {n:'B-Skip drill',d:'2×20 yds'},
+    {n:'Wall drive drill',d:'2×10 each leg'},
+    {n:'Resistance band sprints',d:'6×20 yds',note:'Dad holds band — drive hard through it'},
+    {n:'Cut drill',d:'6 reps',note:'Sprint 10 yds, hard cut left or right, sprint 10 more — pure CB work'},
+  ],
+];
+function getSprintDrills(idx, type){
+  if(type==='legs') return SPRINT_LEGS[idx%3];
+  return SPRINT_RECOVERY[idx%3];
+}
+
+
+// ── MEAL PLAN DATA ────────────────────────────────────────────────
+// 3 rotating meal combos — keeps it from feeling repetitive
+const MEAL_PLANS = [
+  // Combo A
+  [
+    {time:'4:30 AM · Pre-Gym',   name:'Pre-Gym Fuel',        detail:'1 banana + handful almonds + 8 oz water',                             cal:'~280 cal'},
+    {time:'5:00 AM · During',    name:'Gym Drink',            detail:'Water with electrolytes OR coconut water — sip every 15-20 min',      cal:'hydrate'},
+    {time:'7:00 AM · Breakfast', name:'Post-Gym Breakfast',   detail:'5 scrambled eggs + 2 cups oatmeal + honey + glass whole milk + banana',cal:'~720 cal'},
+    {time:'10:30 AM · Snack',    name:'Morning Snack',        detail:'Greek yogurt (plain) + granola + drizzle of honey',                   cal:'~350 cal'},
+    {time:'12:30 PM · Lunch',    name:'Lunch',                detail:'Chicken breast + 2 cups white rice + broccoli + glass whole milk',    cal:'~700 cal'},
+    {time:'3:30 PM · Snack',     name:'Afternoon Snack',      detail:'Peanut butter sandwich on white bread + glass of milk',              cal:'~450 cal'},
+    {time:'6:30 PM · Dinner',    name:'Dinner',               detail:'Steak or ground beef + sweet potato + salad + glass whole milk',      cal:'~750 cal'},
+  ],
+  // Combo B
+  [
+    {time:'4:30 AM · Pre-Gym',   name:'Pre-Gym Fuel',        detail:'Small bowl oatmeal with honey + 8 oz water',                          cal:'~280 cal'},
+    {time:'5:00 AM · During',    name:'Gym Drink',            detail:'Water — drink at least 20 oz during the session',                    cal:'hydrate'},
+    {time:'7:00 AM · Breakfast', name:'Post-Gym Breakfast',   detail:'4 eggs + 2 cups oatmeal + peanut butter + banana + glass whole milk', cal:'~700 cal'},
+    {time:'10:30 AM · Snack',    name:'Morning Snack',        detail:'Cottage cheese + honey + handful of almonds',                        cal:'~350 cal'},
+    {time:'12:30 PM · Lunch',    name:'Lunch',                detail:'Ground beef + 2 cups pasta + tomato sauce + glass whole milk',        cal:'~720 cal'},
+    {time:'3:30 PM · Snack',     name:'Afternoon Snack',      detail:'2 hardboiled eggs + banana + handful mixed nuts',                    cal:'~380 cal'},
+    {time:'6:30 PM · Dinner',    name:'Dinner',               detail:'Salmon + white rice + green beans + glass whole milk',               cal:'~700 cal'},
+  ],
+  // Combo C
+  [
+    {time:'4:30 AM · Pre-Gym',   name:'Pre-Gym Fuel',        detail:'Chocolate milk 8 oz — fast carbs + protein',                         cal:'~200 cal'},
+    {time:'5:00 AM · During',    name:'Gym Drink',            detail:'Water — sip every set. Aim for 20+ oz total',                       cal:'hydrate'},
+    {time:'7:00 AM · Breakfast', name:'Post-Gym Breakfast',   detail:'5 eggs + bagel with peanut butter + orange juice + glass whole milk', cal:'~750 cal'},
+    {time:'10:30 AM · Snack',    name:'Morning Snack',        detail:'Greek yogurt + banana + granola',                                   cal:'~380 cal'},
+    {time:'12:30 PM · Lunch',    name:'Lunch',                detail:'Tuna or canned salmon + white rice + sweet corn + glass whole milk',  cal:'~650 cal'},
+    {time:'3:30 PM · Snack',     name:'Afternoon Snack',      detail:'Protein-rich: cottage cheese + honey + fruit on the side',           cal:'~350 cal'},
+    {time:'6:30 PM · Dinner',    name:'Dinner',               detail:'Chicken thighs + mashed sweet potato + broccoli + glass whole milk', cal:'~720 cal'},
+  ],
+];
+
+// Rest days get a slightly different plan — still eat big but no pre-gym
+const MEAL_PLANS_REST = [
+  [
+    {time:'8:00 AM · Breakfast', name:'Breakfast',            detail:'5 eggs + 2 cups oatmeal + honey + glass whole milk + banana',        cal:'~720 cal'},
+    {time:'11:00 AM · Snack',    name:'Morning Snack',        detail:'Greek yogurt + granola + honey',                                    cal:'~350 cal'},
+    {time:'1:00 PM · Lunch',     name:'Lunch',                detail:'Chicken breast + 2 cups white rice + vegetable + glass whole milk',  cal:'~700 cal'},
+    {time:'4:00 PM · Snack',     name:'Afternoon Snack',      detail:'Peanut butter sandwich + glass of milk',                            cal:'~450 cal'},
+    {time:'7:00 PM · Dinner',    name:'Dinner',               detail:'Steak or ground beef + sweet potato + salad + glass whole milk',    cal:'~750 cal'},
+    {time:'9:30 PM · Before Bed',name:'Night Fuel',           detail:'Cottage cheese + honey — feeds muscles while you sleep',             cal:'~200 cal'},
+  ],
+  [
+    {time:'8:00 AM · Breakfast', name:'Breakfast',            detail:'4 eggs + bagel + peanut butter + orange juice + glass whole milk',   cal:'~700 cal'},
+    {time:'11:00 AM · Snack',    name:'Morning Snack',        detail:'Cottage cheese + handful almonds + banana',                         cal:'~380 cal'},
+    {time:'1:00 PM · Lunch',     name:'Lunch',                detail:'Ground beef + 2 cups pasta + sauce + glass whole milk',             cal:'~720 cal'},
+    {time:'4:00 PM · Snack',     name:'Afternoon Snack',      detail:'2 hardboiled eggs + mixed nuts + fruit',                            cal:'~350 cal'},
+    {time:'7:00 PM · Dinner',    name:'Dinner',               detail:'Salmon + white rice + green beans + glass whole milk',              cal:'~700 cal'},
+    {time:'9:30 PM · Before Bed',name:'Night Fuel',           detail:'Glass of whole milk + peanut butter toast',                         cal:'~300 cal'},
+  ],
+];
+
+function getDayMeals(idx, type){
+  if(type === 'rest') return MEAL_PLANS_REST[idx % 2];
+  return MEAL_PLANS[idx % 3];
+}
+
+
+function openPanel(e){
+  document.getElementById('pd').textContent=e.dow+' · '+e.d;
+  document.getElementById('pt').textContent=e.title;
+  document.getElementById('pm').textContent=e.type==='game'?'🏈 Game Day':e.type==='rest'?'':'⏱ ~90 min · 9 exercises + 3 abs';
+  const body=document.getElementById('pb');
+  body.innerHTML='';
+
+  if(e.note){
+    const n=document.createElement('div');
+    n.className='pnote'+(e.type==='game'?' gnote':'');
+    n.textContent=e.note;
+    body.appendChild(n);
+  }
+
+  if(e.lifts&&e.lifts.length>0){
+    const s=document.createElement('div');
+    s.className='psec';
+    s.innerHTML='Exercises <span class="ct">'+e.lifts.length+' movements</span>';
+    body.appendChild(s);
+    const ll=document.createElement('div');
+    ll.className='llist';
+    e.lifts.forEach(l=>{
+      const r=document.createElement('div');
+      r.className='lrow';
+      const nd=document.createElement('div');
+      const nm=document.createElement('span');
+      nm.className='lname';
+      nm.textContent=l.n;
+      nd.appendChild(nm);
+      if(l.note){const nt=document.createElement('span');nt.className='lnote';nt.textContent=l.note;nd.appendChild(nt);}
+      const det=document.createElement('div');
+      det.className='ldetail';
+      det.textContent=l.d;
+      r.appendChild(nd);r.appendChild(det);ll.appendChild(r);
+    });
+    body.appendChild(ll);
+  }
+
+  // abs — all non-rest, non-game get abs
+  if(e.type!=='rest'&&e._absIdx>=0){
+    const as=document.createElement('div');
+    as.className='psec abs';
+    as.innerHTML='Ab Circuit <span class="ct">3 exercises · rotates daily</span>';
+    body.appendChild(as);
+    const al=document.createElement('div');
+    al.className='llist';
+    getAbs(e._absIdx).forEach(ab=>{
+      const r=document.createElement('div');
+      r.className='lrow ab';
+      const nd=document.createElement('div');
+      const nm=document.createElement('span');
+      nm.className='lname';
+      nm.textContent=ab.n;
+      nd.appendChild(nm);
+      if(ab.note){const nt=document.createElement('span');nt.className='lnote';nt.textContent=ab.note;nd.appendChild(nt);}
+      const det=document.createElement('div');
+      det.className='ldetail';
+      det.textContent=ab.d;
+      r.appendChild(nd);r.appendChild(det);al.appendChild(r);
+    });
+    body.appendChild(al);
+  }
+
+  // sprint drills section — show on legs and recovery days
+  if(e.type==='legs'||e.type==='recovery'){
+    const sd=document.createElement('div');
+    sd.className='psec spd';
+    sd.innerHTML='Speed Work <span class="ct">before main workout</span>';
+    body.insertBefore(sd, body.firstChild.nextSibling||null);
+    // insert after note if exists
+    const noteEl=body.querySelector('.pnote');
+    if(noteEl){ noteEl.after(sd); } else { body.prepend(sd); }
+
+    const sprintData = getSprintDrills(e._absIdx||0, e.type);
+    const sl=document.createElement('div');
+    sl.className='llist';
+    sprintData.forEach(s=>{
+      const r=document.createElement('div');
+      r.className='lrow spd';
+      const nd=document.createElement('div');
+      const nm=document.createElement('span');
+      nm.className='lname';
+      nm.textContent=s.n;
+      nd.appendChild(nm);
+      if(s.note){const nt=document.createElement('span');nt.className='lnote';nt.textContent=s.note;nd.appendChild(nt);}
+      const det=document.createElement('div');
+      det.className='ldetail spdd';
+      det.textContent=s.d;
+      r.appendChild(nd);r.appendChild(det);sl.appendChild(r);
+    });
+    // insert after sprint section header
+    sd.after(sl);
+  }
+
+  // ── MEAL PLAN ──────────────────────────────────────────────────
+  if(e.type !== 'rest'){
+    const mSec = document.createElement('div');
+    mSec.className = 'psec meal';
+    mSec.innerHTML = 'Meal Plan <span class="ct">Daily Nutrition</span>';
+    body.appendChild(mSec);
+
+    const meals = getDayMeals(e._absIdx||0, e.type);
+    meals.forEach(m => {
+      const row = document.createElement('div');
+      row.className = 'meal-row';
+      row.innerHTML = `
+        <div style="flex:1">
+          <div class="meal-time">${m.time}</div>
+          <div class="meal-name">${m.name}</div>
+          <div class="meal-detail">${m.detail}</div>
+        </div>
+        <div class="meal-cal">${m.cal}</div>`;
+      body.appendChild(row);
+    });
+  }
+
+  // highlight selected
+  document.querySelectorAll('.cd.sel').forEach(c=>c.classList.remove('sel'));
+  document.getElementById('backdrop').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+// ── NUTRITION PANEL ──────────────────────────────────────────────
+function toggleNutr(){
+  const panel = document.getElementById('nutrPanel');
+  if(panel.style.display === 'none'){
+    if(!panel.innerHTML) buildNutrPanel();
+    panel.style.display = 'block';
+  } else {
+    panel.style.display = 'none';
+  }
+  // close rest timer if open
+  document.getElementById('restPanel').style.display='none';
+}
+
+function buildNutrPanel(){
+  const panel = document.getElementById('nutrPanel');
+
+  const data = {
+    calories: 3100,
+    protein: 140,
+    carbs: 380,
+    fat: 90,
+    macros: [
+      {num:'3,100', label:'Calories', color:'var(--gold)'},
+      {num:'140g', label:'Protein', color:'#ff6b6b'},
+      {num:'380g', label:'Carbs', color:'#f5a800'},
+      {num:'90g', label:'Fat', color:'#6bcfff'},
+    ],
+    protein_foods: [
+      {name:'Chicken Breast (cooked)', note:'Best lean protein source', amt:'30g per 4 oz', color:'#ff6b6b'},
+      {name:'Ground Beef (85/15)', note:'Higher calories = more mass', amt:'22g per 3 oz', color:'#ff6b6b'},
+      {name:'Eggs', note:'6 eggs = full meal worth of protein', amt:'6g each', color:'#ff6b6b'},
+      {name:'Greek Yogurt (plain)', note:'Eat before bed or as snack', amt:'15g per cup', color:'#ff6b6b'},
+      {name:'Whole Milk', note:'Easiest extra calories you will find', amt:'8g per cup', color:'#ff6b6b'},
+      {name:'Cottage Cheese', note:'Slow-digesting — great before bed', amt:'25g per cup', color:'#ff6b6b'},
+      {name:'Canned Tuna', note:'Cheap, fast, high protein', amt:'25g per can', color:'#ff6b6b'},
+      {name:'Salmon', note:'Protein + healthy fats', amt:'34g per 5 oz', color:'#ff6b6b'},
+      {name:'Steak (sirloin)', note:'High protein + creatine naturally', amt:'26g per 3 oz', color:'#ff6b6b'},
+    ],
+    carb_foods: [
+      {name:'White Rice (cooked)', note:'Best post-workout carb — fast digesting', amt:'45g per cup', color:'#f5a800'},
+      {name:'Oatmeal (cooked)', note:'Best pre-workout — slow energy', amt:'27g per cup', color:'#f5a800'},
+      {name:'Sweet Potato', note:'Vitamins + carbs in one', amt:'26g per medium', color:'#f5a800'},
+      {name:'White Bread', note:'Quick carbs — fine around workouts', amt:'13g per slice', color:'#f5a800'},
+      {name:'Pasta (cooked)', note:'Big calorie + carb meal', amt:'43g per cup', color:'#f5a800'},
+      {name:'Banana', note:'Pre-workout fuel + potassium', amt:'27g each', color:'#f5a800'},
+      {name:'Bagel', note:'Easy high-carb breakfast', amt:'55g each', color:'#f5a800'},
+      {name:'Orange Juice', note:'Fast carbs + vitamin C', amt:'26g per cup', color:'#f5a800'},
+    ],
+    fat_foods: [
+      {name:'Peanut Butter', note:'Easiest way to add 200 calories', amt:'8g fat per 2 tbsp', color:'#6bcfff'},
+      {name:'Almonds / Mixed Nuts', note:'Snack between meals', amt:'14g fat per oz', color:'#6bcfff'},
+      {name:'Whole Eggs (yolk)', note:'Do not throw away the yolk', amt:'5g fat each', color:'#6bcfff'},
+      {name:'Olive Oil', note:'Add to rice or pasta', amt:'14g fat per tbsp', color:'#6bcfff'},
+      {name:'Avocado', note:'Healthy fats + calories', amt:'21g fat each', color:'#6bcfff'},
+    ],
+    meals: [
+      {time:'4:45 AM', name:'Pre-Gym', desc:'Banana + handful almonds OR small oats', cals:'~300'},
+      {time:'7:00 AM', name:'Post-Gym Breakfast', desc:'5 eggs + 2 cups oatmeal + honey + milk + fruit', cals:'~700'},
+      {time:'12:00 PM', name:'Lunch', desc:'Chicken or beef + 2 cups rice + vegetable + milk', cals:'~700'},
+      {time:'3:30 PM', name:'Snack', desc:'Greek yogurt + granola OR PB sandwich', cals:'~400'},
+      {time:'6:30 PM', name:'Dinner', desc:'Steak or salmon + sweet potato + broccoli + milk', cals:'~750'},
+      {time:'9:30 PM', name:'Before Bed', desc:'Cottage cheese + honey OR milk + PB toast', cals:'~300'},
+    ],
+    tips: [
+      {title:'Weekly Weigh-In', body:'Every Monday morning before eating. Goal: +0.5 to 1 lb per week. Not gaining? Eat more.'},
+      {title:'Protein Rule', body:'Every single meal needs a protein source. If it does not have protein it is not a real meal for you.'},
+      {title:'Drink Water', body:'10+ glasses a day. Dark yellow pee = not enough. Dehydration kills strength and recovery.'},
+      {title:'Do Not Skip Meals', body:'At 110 lbs your biggest problem is eating enough. Missing one meal kills your daily goal.'},
+    ]
+  };
+
+  let html = `
+  <div class="np-head">
+    <div class="np-title">Daily Nutrition</div>
+    <div class="np-sub">Built for 110 lbs · Goal: 122+ lbs · 5am training</div>
+  </div>
+  <div class="np-macro">
+    ${data.macros.map(m=>`<div class="np-macro-item"><div class="np-macro-num" style="color:${m.color}">${m.num}</div><div class="np-macro-label">${m.label}</div></div>`).join('')}
+  </div>`;
+
+  // Daily meal plan
+  html += `<div class="np-section">Daily Meal Plan</div>`;
+  data.meals.forEach(m=>{
+    html += `<div class="np-food-row">
+      <div><div class="np-food-name">${m.time} — ${m.name}</div><div class="np-food-note">${m.desc}</div></div>
+      <div class="np-food-amt" style="color:var(--gold)">${m.cals}</div>
+    </div>`;
+  });
+
+  // Protein foods
+  html += `<div class="np-section" style="color:#ff4444">Protein Sources (Goal: 140g/day)</div>`;
+  data.protein_foods.forEach(f=>{
+    html += `<div class="np-food-row">
+      <div><div class="np-food-name">${f.name}</div><div class="np-food-note">${f.note}</div></div>
+      <div class="np-food-amt" style="color:#ff6b6b">${f.amt}</div>
+    </div>`;
+  });
+
+  // Carb foods
+  html += `<div class="np-section" style="color:#d4900a">Carb Sources (Goal: 380g/day)</div>`;
+  data.carb_foods.forEach(f=>{
+    html += `<div class="np-food-row">
+      <div><div class="np-food-name">${f.name}</div><div class="np-food-note">${f.note}</div></div>
+      <div class="np-food-amt" style="color:#f5a800">${f.amt}</div>
+    </div>`;
+  });
+
+  // Fat foods
+  html += `<div class="np-section" style="color:#4a9fbf">Healthy Fat Sources (Goal: 90g/day)</div>`;
+  data.fat_foods.forEach(f=>{
+    html += `<div class="np-food-row">
+      <div><div class="np-food-name">${f.name}</div><div class="np-food-note">${f.note}</div></div>
+      <div class="np-food-amt" style="color:#6bcfff">${f.amt}</div>
+    </div>`;
+  });
+
+  // Tips
+  html += `<div class="np-section">Rules</div>`;
+  data.tips.forEach(t=>{
+    html += `<div class="np-tip"><strong>${t.title}</strong>${t.body}</div>`;
+  });
+
+  html += `<div style="height:16px"></div>`;
+  panel.innerHTML = html;
+}
+
+// close nutrition panel when rest timer opens
+const _origToggleRest = typeof toggleRestTimer === 'function' ? toggleRestTimer : null;
+
+// ── REST TIMER ────────────────────────────────────────────────────
+let restSeconds = 90;
+let restInterval = null;
+let restRemaining = 90;
+
+function toggleRestTimer(){
+  const panel = document.getElementById('restPanel');
+  panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+  // close nutrition if open
+  document.getElementById('nutrPanel').style.display='none';
+}
+
+function updateDisplay(secs){
+  const m = Math.floor(secs/60);
+  const s = secs%60;
+  document.getElementById('restDisplay').textContent = m+':'+(s<10?'0':'')+s;
+}
+
+function adjustTime(delta){
+  if(restInterval) return;
+  restSeconds = Math.max(15, restSeconds + delta);
+  restRemaining = restSeconds;
+  updateDisplay(restSeconds);
+}
+
+function setTime(secs){
+  if(restInterval) return;
+  restSeconds = secs;
+  restRemaining = secs;
+  updateDisplay(secs);
+  const d = document.getElementById('restDisplay');
+  d.className='rest-display';
+}
+
+function startRestTimer(){
+  if(restInterval){
+    clearInterval(restInterval);
+    restInterval = null;
+    restRemaining = restSeconds;
+    updateDisplay(restSeconds);
+    document.getElementById('restDisplay').className='rest-display';
+    document.getElementById('restStart').textContent='START';
+    return;
+  }
+  restRemaining = restSeconds;
+  document.getElementById('restStart').textContent='STOP';
+  document.getElementById('restDisplay').className='rest-display running';
+  restInterval = setInterval(()=>{
+    restRemaining--;
+    updateDisplay(restRemaining);
+    if(restRemaining<=0){
+      clearInterval(restInterval);
+      restInterval=null;
+      document.getElementById('restDisplay').textContent='GO!';
+      document.getElementById('restDisplay').className='rest-display done';
+      document.getElementById('restStart').textContent='START';
+      // vibrate if supported
+      if(navigator.vibrate) navigator.vibrate([200,100,200,100,400]);
+      setTimeout(()=>{
+        restRemaining=restSeconds;
+        updateDisplay(restSeconds);
+        document.getElementById('restDisplay').className='rest-display';
+      },2000);
+    }
+  },1000);
+}
+
+function closeP(ev){
+  if(ev&&ev.target!==document.getElementById('backdrop'))return;
+  document.getElementById('backdrop').classList.remove('open');
+  document.body.style.overflow='';
+}
+</script>
+</body>
+</html>
